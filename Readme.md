@@ -72,6 +72,7 @@ Para usar tablas necesitamos definir las filas con |
 Para escribir varias líneas de citas solamnete las concatenamos en la siuiente línea utilizando `>`:
 
 > Yo solo se, que nada se.
+
 > Un filósofo random
 
 Sino utilizamos una cita en una línea con mayor que `>`
