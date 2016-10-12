@@ -30,6 +30,8 @@ Para nosotros utilizar imágenes debemos colocar un texto alternativo en bracjet
 
 ![Imagen de Js en color amarillo](https://lh3.googleusercontent.com/-CLNtMHm_YB8/AAAAAAAAAAI/AAAAAAAAAB8/toUGK2dqElY/w360-h203-p-rw/photo.jpg "Javascript")
 
+## Formateo de código
+
 Para nosotros utilizar el formateo de codigo dentro de texto plano debemos de utilizar el caracter `Tilde invertida`
 
 Para utilizar el formateo de codigo en un bloque de codigo necesitamos utilizar 3 `Tildes invertidas` donde se puede especificar el lenguaje de programacion a usarse para el formateo del codigo, justo despues de las 3 `Tildes invertidas`
