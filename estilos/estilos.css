@@ -1,0 +1,38 @@
+ <style>
+        /*   
+        //TAGS
+        nombreTag{
+        Propiedad1:valorPropiedad1;
+        Propiedad2:valorPropiedad2;
+        Propiedad3:valorPropiedad3;
+        }*/
+        html{
+            background-color: #123123;
+        }
+        body{
+            background-color: #687fd4;
+        }
+        h1{
+            background-color: aqua;
+        }
+        p{background-color: aquamarine;
+            
+        }
+        cualquiera{
+            background-color: floralwhite;
+        }
+        .nombreClaseRojo{
+            background-color: red;
+        }
+        .nombreClaseAzul{
+            background-color: blue;
+        }
+        .nombreClaseAmarillo{
+            background-color: yellow;
+        }
+        
+        
+        /*POR ID*/
+        #parrafoVerde{
+            background-color: darkgray;
+        }
