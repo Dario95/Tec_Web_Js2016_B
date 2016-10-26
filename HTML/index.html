@@ -21,40 +21,63 @@
 
 <body>
 
-   <h1>Mi titulo <small> este texto es mas claro</small></h1>
-   <h1>Mi ejemplo de codio</h1>
-   <p>El tag para describir imagenes es: <code>&lt;img&gt;</code></p>
-   
-   
-   <h2>User inputs con bootstrap</h2>
-   <p>No esta permitido por ejemplo el
-   <kbd>
+    <h1>Mi titulo <small> este texto es mas claro</small></h1>
+    <h1>Mi ejemplo de codio</h1>
+    <p>El tag para describir imagenes es: <code>&lt;img&gt;</code></p>
+
+
+    <h2>User inputs con bootstrap</h2>
+    <p>No esta permitido por ejemplo el
+        <kbd>
        <kdb>ctrl</kdb>
        +
        <kbd>,</kbd>
-   </kbd></p>
-   
-   <table style="width:100%">
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td> 
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td> 
-    <td>94</td>
-  </tr>
-</table>
-   
-   
-   
-   
+        </kbd>
+    </p>
+
+    <!--table>(tr>th)+tr>td-->
+
+
+    <table <table class="table table-hover">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td class="active">Jill</td>
+            <td class="active">Smith</td>
+            <td class="active">50</td>
+        </tr>
+        <tr>
+            <td class="success">Eve</td>
+            <td class="success">Jackson</td>
+            <td class="success">94</td>
+        </tr>
+    </table>
+
+
+    <h2>Forms</h2>
+    <!-- .row>.col-sm3+.col-sm-6+.col-sm3-->
+    <div class="conteiner">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <form>
+                    <div class="input-group">
+                        <div class="input-group-addon">Holi</div>
+                        <input type="text" class="form-control" id="exampleInputAmount" placeholder="k ace">
+                        <div class="input-group-addon">boli</div>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+
+
     <h1>Hola</h1>
     <!--    .container  EMMET-->
     <div class="container" style="background-color:yellow;">
@@ -171,5 +194,4 @@
      </facultad>
  </universidad>
 -->
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help
+Contact GitHub API Training Shop Blog About © 2016 GitHub, Inc. Terms Privacy Security Status Help
