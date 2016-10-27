@@ -21,6 +21,7 @@
 - <a href="#marco-teorico">Marco Teorico</a>
   * <a href="#hist">Historia y Facts</a>
   * <a href="#defhtml">Definicion HTML</a>
+  * <a href="#defhtml"></a>
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
 
@@ -36,6 +37,7 @@ El tema de la práctica es: `Introduccion a la Web`
 - Entender los distintos métodos utilizados en http.
 <a name="marco-teorico"></a>
 ## Marco Teorico
+
 <a name="defhtml"></a>
 ### Definición HTML
 
