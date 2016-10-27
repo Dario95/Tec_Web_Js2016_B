@@ -3,7 +3,7 @@
 ### Materia : `Tecnologías Web con JavaScript`
 
 <p align="center">
-<img src="https://openclipart.org/image/300px/svg_to_png/168924/web-books.png&disposition=attachment" alt="Libros sobre la web" title="Libros sobre la web por cliparteles ( https://openclipart.org/user-detail/cliparteles)" />
+<img src="https://www.planet-source-code.com/vb/2010Redesign/images/LangugeHomePages/HTML5_CSS_JavaScript.png" alt="Logos HTML CSS JS" title="Logos HTML CSS JS" />
 </p>
 
 ### Tema : `Introducción a la Web`
@@ -24,13 +24,10 @@
   - <a href="#w3c">World Wide Web Consortium</a>
   - <a href="#metdos">Métodos HTTP</a>
   - <a href="#status">Status Code HTTP</a>
-  - <a href="#w3c">W3C</a>
-  - <a href="#w3cSchools">W3C Schools</a>
+  - <a href="#w3cschools">W3C Schools</a>
   - <a href="#html">HTML</a>
   - <a href="#doctype">Doctype</a>
   - <a href="#herramientaInspeccionar">Herramienta inspeccionar</a>
-  - <a href="#postman">Postman</a>
-  - <a href="#npm">NPM (Node Package Manger)</a>
   - <a href="#xml">XML</a>
   - <a href="#tags">Tags</a>
     - <a href="#cabeceras">cabeceras</a>
@@ -87,7 +84,7 @@ El Consorcio WWW, en inglés: World Wide Web Consortium (W3C), es un consorcio i
 
 <a href="#cabecera">A la cabecera</a>
 
-<a name="metodosHTTP"></a>
+<a name="metodos"></a>
 ### HTTP Methods
 El protocolo HTTP (The Hypertext Transfer Protocol) trabaja como un protocolo de pedido-respuesta entre el cliente y servidor.
 
@@ -125,34 +122,25 @@ Devuelve los métodos HTTP que el servidor soporta para un URL específico. Esto
 
 <a href="#cabecera">A la cabecera</a>
 
-<a name="codigosHTTP"></a>
+<a name="status"></a>
 ### Códigos HTTP
 Los códigos HTTP son códigos de estado de una respuesta, el primer dígito especifica una de las cinco clases de respuesta.
 
 #### Clases de respuesta
 - 1xx Respuestas informativas
-  Peticiones recibidas, continuando proceso.
-- 2xx Peticiones correctas
-  Peticiones recibidas fue correctamente entendida y aceptada
-- 3xx Redireccciones
-  El cliente debe tomar una acción adicional para completar la petición.
-- 4xx Errores del cliente
-  La solicitud contiene sintaxis incorrecta o no puede procesarse.
-- 5xx Errores de servidor
-  El servidor falló al completar una solicitud aparentemente válida.
+  Indica que la petición ha sido recibida y se está procesando.
+- 2xx Respuestas correctas.
+  Indica que la petición ha sido procesada correctamente.
+- 3xx Respuestas de redirección. Indica que el cliente necesita realizar más acciones para finalizar la petición.
+- 4xx Errores causados por el cliente. Indica que ha habido un error en el procesado de la petición a causa de que el cliente ha hecho algo mal.
+- 5xx Errores causados por el servidor. Indica que ha habido un error en el procesado de la petición a causa de un fallo en el servidor.
 
-(Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Anexo:C%C3%B3digos_de_estado_HTTP))
+(Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol#C.C3.B3digos_de_respuesta))
 
 <a href="#cabecera">A la cabecera</a>
 
 
-
-
-
-<a href="#cabecera">A la cabecera</a>
-
-
-<a name="w3schools"></a>
+<a name="w3cschools"></a>
 ### W3C Schools
 W3Schools es un sitio de desarrolladores web, con tutoriales y referencias sobre lenguajes de desarrollo web como HTML, CSS, JavaScript, PHP, SQL y Bootstrap, que cubre la mayoría de los aspectos de la programación web.
 
@@ -172,32 +160,12 @@ En la forma serializada de un documento, este se manifiesta como una cadena cort
 
 <a name="html"></a>
 ### HTML
-HTML es el lenguaje de marcado estándar para la creación de páginas Web.
+HTML, sigla en inglés de HyperText Markup Language (lenguaje de marcas de hipertexto), hace referencia al lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado código HTML) para la definición de contenido de una página web, como texto, imágenes, videos, juegos, entre otros.
 
-- HTML significa Hyper Text Markup Language
-- HTML describe la estructura de las páginas Web usando el marcado
-- Los elementos HTML son los bloques de construcción de páginas HTML
-- Los elementos HTML están representados por etiquetas
-- Los navegadores no muestran las etiquetas HTML, pero los utilizan para representar el contenido de la página
-
-(Fuente: [w3schools](http://www.w3schools.com/html/html_intro.asp))
+(Fuente: [Wikipedia](https://es.wikipedia.org/wiki/HTML))
 
 <a href="#cabecera">A la cabecera</a>
 
-<a name="estilosCSS"></a>
-### Estilos CSS
-Cascading Style Sheets (CSS) describe cómo son los elementos HTML que se mostrará en la pantalla.
-
-CSS ahorra mucho trabajo. Se puede controlar la disposición de múltiples páginas web a la vez.
-
-CSS se puede añadir a los elementos HTML de 3 formas:
-- Inline - mediante el atributo de estilo en los elementos HTML.
-- Interna - mediante el uso de un elemento `<style>` en la sección `<head>`.
-- Externo - mediante el uso de un archivo CSS externo.
-
-(Fuente: [w3schools](http://www.w3schools.com/html/html_css.asp))
-
-<a href="#cabecera">A la cabecera</a>
 
 <a name="herramientaInspeccionar"></a>
 ### Herramienta inspeccionar
@@ -205,21 +173,6 @@ Chrome Inspector es una herramienta complementaria de desarrollo web que se usa 
 
 (Fuente: [Google support](https://support.google.com/richmedia/answer/6062390?hl=es))
 
-<a href="#cabecera">A la cabecera</a>
-
-<a name="postman"></a>
-### Postman
-Postman es la navaja suiza de las herramientas API, lo que permite diseñar, construir, probar, documentar y monitorear servicios, todo en un solo lugar. Postman está disponible para Chrome, Mac OS X y Windows.
-
-(Fuente: [Postman](https://www.getpostman.com/))
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="npm"></a>
-### NPM (Node Package Manger)
-NPM (Node Package Manger) es el gestor de paquetes por defecto para Node.js, un entorno de ejecución para JavaScript.
-
-(Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Npm))
 
 <a href="#cabecera">A la cabecera</a>
 
@@ -265,6 +218,7 @@ La etiqueta `<li>` es usada para una lista ordenada `<ol>`, lista no ordenada `<
 (Fuente: [w3schools](http://www.w3schools.com/tags/))
 
 <a href="#cabecera">A la cabecera</a>
+
 <a name="desarrolloDeLaPractica"></a>
 ## Desarrollo de la práctica
 ### Instalación programas necesarios
