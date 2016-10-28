@@ -22,7 +22,7 @@
   - <a href="#nodejs">Node.js</a>
   - <a href="#navegador">Navegador</a>
   - <a href="#w3c">World Wide Web Consortium</a>
-  - <a href="#metdos">Métodos HTTP</a>
+  - <a href="#metodos">Métodos HTTP</a>
   - <a href="#status">Status Code HTTP</a>
   - <a href="#w3cschools">W3C Schools</a>
   - <a href="#html">HTML</a>
@@ -227,8 +227,8 @@ La etiqueta `<li>` es usada para una lista ordenada `<ol>`, lista no ordenada `<
 - Editor Brackets
 - Emmet
 
-### Esquema HTML base
-- Creación de documento html que contenga los elementos base del cuerpo de un HTML.
+### Primeros pasos con HTML
+- Se crea un archivo `HTML` con su estructura básica.
 <p align="center">
 <img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/baseHTML.png?raw=true" alt="Muestra codigo base de HTML" title="base HTML"/>
 </p>
