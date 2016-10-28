@@ -221,62 +221,70 @@ La etiqueta `<li>` es usada para una lista ordenada `<ol>`, lista no ordenada `<
 
 <a name="desarrolloDeLaPractica"></a>
 ## Desarrollo de la práctica
-### Instalación programas necesarios
-- Navegador web Chrome
-- Postman Chrome plugin
-- Editor Brackets
+### Programas necesarios
+- Navegador Web
+- Postman plugin
+- Brackets
 - Emmet
+-Node.js
+
+### Herramienta Inspector en un navegador web
+
+El uso de la consola del navegador, permite observar la distribución de la página web, además de muchas otras herramientas que se encuentran incluidas.
+
+  <p align="center">
+  <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/consola.jpg?raw=true" alt="Consola de Google Chrome" title="Consola de Google Chrome"/>
+  </p>
+  
+-Network nos permitirá ver como se van descargando los archivos de nuestro sitio web en el tiempo, y además de otro tipo de información como métodos de solicitudes y códigos de estado.
+<p align="center">
+  <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/networkconsole.jpg?raw=true" alt="Pestaña Network del Inspector de Word" title="Pestaña Network del Inspector de Word"/>
+  </p>
 
 ### Primeros pasos con HTML
 - Se crea un archivo `HTML` con su estructura básica.
 <p align="center">
-<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/baseHTML.png?raw=true" alt="Muestra codigo base de HTML" title="base HTML"/>
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/htmlBase.jpg?raw=true" alt="Estructura HTMl" title="Estructura HTML"/>
 </p>
 
   emmet `! + tab`
 
-  mediante el uso de la herramienta inspector se puede diferenci  ar cada uno de los elementos.
-
-  <p align="center">
-  <img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/inspector.png?raw=true" alt="Muestra parte de la funcionalidad de inspector" title="inspector"/>
-  </p>
-
-- Agregado estilos CSS Inline
+- Agregado de estilos CSS
 <p align="center">
-<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/cssInline.png?raw=true" alt="Muestra ejemplo de css inline" title="css inline"/>
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/stylecode.jpg?raw=true" alt="Código de estilos" title="Código de estilos"/>
 </p>
 
 <p align="center">
-<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/cssInlineNavegador.png?raw=true" alt="Muestra ejemplo de css inline en un navegador web" title="css inline en navegador web"/>
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/style.jpg?raw=true" alt="Estilos Css en una página web" title="Estilos Css en una página web"/>
 </p>
 
-- Agregado contenido dentro de etiqueta `<p>`
+- Agregando un nuevo párrafo `<p>`
 <p align="center">
-<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoP.png?raw=true" alt="Muestra ejemplo de etiqueta p" title="etiqueta p"/>
-</p>
-
-<p align="center">
-<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoPWeb.png?raw=true" alt="Muestra ejemplo de etiqueta p en un navegador web" title="etiqueta p en navegador web"/>
-</p>
-
-- Agregado imagen `<img>`
-<p align="center">
-<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoImg.png?raw=true" alt="Muestra ejemplo de etiqueta img" title="etiqueta img"/>
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/pcode.jpg?raw=true" alt="Ejemplo de etiqueta p" title="etiqueta p"/>
 </p>
 
 <p align="center">
-<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoImgWeb.png?raw=true" alt="Muestra ejemplo de etiqueta img en un navegador web" title="etiqueta img en navegador web"/>
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/p.jpg?raw=true" alt="Ejemplo de etiqueta p en una página web" title="etiqueta p en una página web"/>
+</p>
+
+- Agregando una imagen `<img>`
+<p align="center">
+<img src="https://raw.githubusercontent.com/Dario95/Tec_Web_Js2016_B/HTML-01/Im%C3%A1genes/htmlBase.jpg?raw=true" alt="Muestra ejemplo de etiqueta img" title="etiqueta img"/>
+</p>
+
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/img.jpg?raw=true" alt="Muestra ejemplo de etiqueta img en un navegador web" title="etiqueta img en navegador web"/>
 </p>
 
   emmet `img + tab`
 
-- Agregado lista no ordenada `<ul>`
+- Agregando una lista no ordenada `<ul>`
 <p align="center">
-<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoUl.png?raw=true" alt="Muestra ejemplo de etiqueta ul" title="etiqueta ul"/>
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/listncode.jpg?raw=true" alt="Código de una lista no ordenada" title="etiqueta ul"/>
 </p>
 
 <p align="center">
-<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoUlWeb.png?raw=true" alt="Muestra ejemplo de etiqueta ul en navegador web" title="etiqueta ul en navegador web"/>
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/llistn.jpg?raw=true" alt="Ejemplo de una lista no ordenada en una página web" title="etiqueta ul en una página web"/>
 </p>
 
   emmet `ul>li*3 + tab`
@@ -284,51 +292,47 @@ La etiqueta `<li>` es usada para una lista ordenada `<ol>`, lista no ordenada `<
 - Agregado lista ordenada `<ol>`
 
 <p align="center">
-<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoOl.png?raw=true" alt="Muestra ejemplo de etiqueta ol" title="etiqueta ol"/>
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/listocode.jpg?raw=true" alt="Código de una lista ordenada" title="etiqueta ol"/>
 </p>
 
 <p align="center">
-<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoOlWeb.png?raw=true" alt="Muestra ejemplo de etiqueta ol en navegador web" title="etiqueta ol en navegador web"/>
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/listo.jpg?raw=true" alt="Ejemplo de una lista ordenada en una página web" title="etiqueta ol en una página web"/>
 </p>
 
   emmet `ol>li*3 + tab`
 
-- Agregado enlace referencia `<a>`
+- Agregar una enlace a una página con `<a>`
 
 <p align="center">
-<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoA.png?raw=true" alt="Muestra ejemplo de etiqueta a" title="etiqueta a"/>
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/referenciacode.jpg?raw=true" alt="Código para hace un enlace desde nuestra página web" title="etiqueta a"/>
 </p>
 
 <p align="center">
-<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoAWeb.png?raw=true" alt="Muestra ejemplo de etiqueta a en navegador web" title="etiqueta a en navegador web"/>
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/referencia.jpg?raw=true" alt="Enlace desde nuestra página web" title="etiqueta a en una página web"/>
 </p>
 
   emmet `a + tab`
 
-- Agregado enlace a imagen `<a><img>`
-<p align="center">
-<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoImgEnlace.png?raw=true" alt="Muestra ejemplo de etiqueta a con img en navegador web" title="etiqueta a con img en navegador web"/>
-</p>
 
 ### Postman
-#### GET request
-- Solicitud del primer pokemon `http://pokeapi.co/api/v2/pokemon/1/`
+
+- Hacer una solicitud get con Postman
 <p align="center">
-<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/pokemonGET.png?raw=true" alt="Muestra ejemplo de solicitud GET utilizando el software postman" title="pokemon GET"/>
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/getpostman.jpg?raw=true" alt="Ejemplo de una solicitud GET utilizando el Postman" title="GET"/>
 </p>
 
 #### POST request
 - Solicitud del primer pokemon `http://pokeapi.co/api/v2/pokemon/1/`
 <p align="center">
-<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/pokemonPOST.png?raw=true" alt="Muestra ejemplo de solicitud GET utilizando el software postman" title="pokemon POST"/>
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/postpostman.jpg?raw=true" alt="Ejemplo de una solicitud POST utilizando el Postman" title="POST"/>
 </p>
 
 <a href="#cabecera">A la cabecera</a>
 <a name="conclusionesYRecomendaciones"></a>
 ## Conclusiones y recomendaciones
-- El desarrollo de las directrices para la web se encuentra desarrollada por la W3C, la cual está precedida por el creador de la WWW, que a su vez promueve el uso de la web semántica.
-- La base de la web usa el protocolo HTTP y a través de los métodos GET y POST permite interactuar con los servidores web.
-- La herramientas web postman permite realizar diferentes solicitudes HTTP a un servidor web y de esta forma comprender como reacciona el servidor ante dichas solicitudes.
-- El documento HMTL generado en la práctica es interpretado en el navegador web a través de las etiquetas de DOCTYPE, la cual indica el tiempo de lenguaje de marcas a ser usado.
+- Se aprendió bastante acerca del funcionamiento interno del Internet, es una herramienta poderosa para nostros como futuros desarrolladores.
+- Entender los diferentes métodos, códigos y estándares es de vital utilidad para saber en qué estamos equivocandonos de ser el caso.
+- La programación web es diferente a los varios tipos de programación aprendidos previamente, por lo cual se debe prestar la respectiva atención a las bases de esta materia.
+- El uso de herramientas como postman o la consola de nuestro navegador nos permitirá manejar de mejor manera nuestros sitios web.
 
 <a href="#cabecera">A la cabecera</a>
