@@ -1,103 +1,89 @@
-# Repositorio de Tecnologías Web con Js
-Este repostorio forma parte del [curso de tecnologías web](https://github.com/adrianeguez/Tec_Web_Js_2016_B)
+# Introducción a la web
 
-## Enfasis de Texto
+### Materia : `Tecnologías Web con JavaScript`
 
-* Para nosotros utilizar un texto en **negrita** se utilizan dos "**".
+<p align="center">
+<img src="https://boluda.com/files/intoduccion-css.png" alt="Logos HTML CSS JS" title="CSS Palabras clave" />
+</p>
 
-* Para nosotros utilizar un texto en *cursiva* se utilizan un "*".
+### Tema : `Introducción CSS`
+### Fecha : `2016-10-25`
+### Estudiante : `Homero Darío Arias Puente`
+### Profesor : `Tania Calle - Adrian Eguez`
+### Número de informe : `2`
 
-* Para nosotros ~~tachar~~ un texto se utilizan dos "~~".
-
-##Listas Ordenadas
-
-1. El número
-    * lista no ordenada 1 (dos espacios " " antes del astertisco)
-    * lista no ordenada 2 (dos espacios " " antes del astertisco)
-2. De las listas
-1. Ordenadas 
-    1. Esta si es una lista ordenada (con dos espacios " " antes de los números)
-    2. Esta es la segunda lista ordenada (con dos espacios " " antes de los números)
-4. no importa
-
-## Links
-
-Para utilizar un [Link](https://github.com/Dario95/Tec_Web_Js2016_B/blob/master/Readme.md) debemos encerrar el texto en brackets [] y seguido del URL en paréntesis () 
-
-##Imágenes 
-
-Para nosotros utilizar imágenes debemos colocar un texto alternativo en bracjets [] después del caracter de exclamación ! y el link de la imagen entre paréntesis()
-
-![Imagen de Js en color amarillo](https://lh3.googleusercontent.com/-CLNtMHm_YB8/AAAAAAAAAAI/AAAAAAAAAB8/toUGK2dqElY/w360-h203-p-rw/photo.jpg "Javascript")
-
-## Formateo de código
-
-Para nosotros utilizar el formateo de codigo dentro de texto plano debemos de utilizar el caracter `Tilde invertida`
-
-Para utilizar el formateo de codigo en un bloque de codigo necesitamos utilizar 3 `Tildes invertidas` donde se puede especificar el lenguaje de programacion a usarse para el formateo del codigo, justo despues de las 3 `Tildes invertidas`
-
-* Bloque de código con `javascript`
-
-```javascript
-var mensaje="Hola mundo";
-```
-
-* Bloque de código de una `consola`
-
-```
-> apt-get install
-```
-
-
-* Bloque de HTML
-
-```
-<html>
-</html>
-```
-## Tablas
-
-Para usar tablas necesitamos definir las filas con | 
-
-|Columna 1 | Columna 2|Columna 3| Columna 4|
-|---|---|---|---|
-|Valor 1 C1|Valor 1 C2 |Valor 1 C3|Valor 1 C4|
-|Valor 2 C1|Valor 2 C2 |Valor 2 C3|Valor 2 C4|
-|Valor 3 C1|Valor 3 C2 |Valor 3 C3|Valor 3 C4|
-|Valor 4 C1|Valor 4 C2 |Valor 4 C3|Valor 4 C4|
-
-
-## Citas (no de humanos sino de texto)
-
-Para escribir varias líneas de citas solamnete las concatenamos en la siuiente línea utilizando `>`:
-
-> Yo solo se, que nada se.
-
-> Un filósofo random
-
-Sino utilizamos una cita en una línea con mayor que `>`
-
-> Y si me matas, ¿Me muero?.
-
-## Saltos de línea
-
-## Saltos de linea
-
-Para utilizar un salto de linea debemos de utilizar mas de 3 veces el caracter `-`
 ---
+<a name="cabecera"></a>
+## Índice de contenidos
+- <a href="#tema">Tema</a>
+- <a href="#objetivos">Objetivos</a>
+- <a href="#marcoTeorico">Marco teórico</a>
+  - <a href="#css">Cascading Style Sheets(CSS)</a>
+  - <a href="#combinators">CSS Combinators</a>
+  - <a href="#box">Box Model</a>
+  - <a href="#clases">Pseudo-Clases CSS</a>
+  - <a href="#elemento">Pseudo-Elementos CSS</a>
+  - <a href="#atributos">Selectores de atributos CSS</a>
+  - <a href="#forms">Forms CSS</a>
+  - <a href="#contadores">Contadores CSS</a>
+  - <a href="#transacciones">Transiciones CSS</a>
+  - <a href="#animaciones">Animaciones CSS</a>
+  - <a href="#transformaciones">Transformaciones CSS</a>
+- <a href="#desarrolloDeLaPractica">Desarrollo de la práctica</a>
+- <a href="#conclusionesYRecomendaciones">Conclusiones y recomendaciones</a>
 
-O el caracter `*`
+<a name="tema"></a>
+## Tema
+El tema de la práctica es: `Introducción a la Web`
 
-***
+<a name="objetivos"></a>
+## Objetivos
+- Desarrollar el conocimiento acerca de las hojas de estilo en cascada.
+- Conocer los diferentes métodos que pueden ser utilizados mediante el uso de CSS para aplicar efectos visuales en nuestras páginas web.
 
-O el caracter `__`
+<a href="#cabecera">A la cabecera</a>
 
-___
+<a name="marcoTeorico"></a>
+## Marco teórico
 
-> Otro quote :) 
+<a name="css"></a>
+### Cascading Style Sheets(CSS)
 
-## Videos de Youtube
+ Hojas de Estilo en Cascada (Cascading Style Sheets) es el lenguaje utilizado para describir la presentación de documentos HTML o XML, esto incluye varios lenguajes basados en XML.
 
-Es uso puro de HTML dentro de markdown
-<a href="https://www.youtube.com/watch?v=650s9uWWr1o" target="_blank"><img src="http://nodeframework.com/assets/img/js.png" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+(Fuente: [MDN](https://developer.mozilla.org/es/docs/Web/CSS))
+
+CSS es un lenguaje que describe el estilo de un documento HTML.
+Describe como los elementos de HTML deben ser mostrados.
+
+<a href="#cabecera">A la cabecera</a>
+
+<a name="combinators"></a>
+### CSS Combinators
+
+ Un combinador expande la relación entre los selectores, un selector CSS puede contener mas de un selector simple. Entre los selectores simples se puede incluir un combinador.
+Hay cuatro diferentes combinadores:
+
+- selector descendente (espacio)
+- selector hijo(>)
+- selector hermano adyacente (+)
+- selector hermano general (~)
+
+(Fuente: [W3Schools](http://www.w3schools.com/css/css_combinators.asp))
+
+<a href="#cabecera">A la cabecera</a>
+
+<a name="box"></a>
+### CSS Box Model
+
+ Un combinador expande la relación entre los selectores, un selector CSS puede contener mas de un selector simple. Entre los selectores simples se puede incluir un combinador.
+Hay cuatro diferentes combinadores:
+
+- selector descendente (espacio)
+- selector hijo(>)
+- selector hermano adyacente (+)
+- selector hermano general (~)
+
+(Fuente: [W3Schools](http://www.w3schools.com/css/css_combinators.asp))
+
+<a href="#cabecera">A la cabecera</a>
