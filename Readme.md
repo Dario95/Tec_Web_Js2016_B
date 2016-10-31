@@ -1,207 +1,103 @@
-# Introducción a la web
+# Repositorio de Tecnologías Web con Js
+Este repostorio forma parte del [curso de tecnologías web](https://github.com/adrianeguez/Tec_Web_Js_2016_B)
 
-### Materia : `Tecnologías Web con JavaScript`
+## Enfasis de Texto
 
-<p align="center">
-<img src="https://boluda.com/files/intoduccion-css.png" alt="Logos HTML CSS JS" title="CSS Palabras clave" />
-</p>
+* Para nosotros utilizar un texto en **negrita** se utilizan dos "**".
 
-### Tema : `Introducción CSS`
-### Fecha : `2016-10-25`
-### Estudiante : `Homero Darío Arias Puente`
-### Profesor : `Tania Calle - Adrian Eguez`
-### Número de informe : `2`
+* Para nosotros utilizar un texto en *cursiva* se utilizan un "*".
 
----
-<a name="cabecera"></a>
-## Índice de contenidos
-- <a href="#tema">Tema</a>
-- <a href="#objetivos">Objetivos</a>
-- <a href="#marcoTeorico">Marco teórico</a>
-  - <a href="#css">Cascading Style Sheets(CSS)</a>
-  - <a href="#combinators">CSS Combinators</a>
-  - <a href="#box">Box Model</a>
-  - <a href="#clases">Pseudo-Clases CSS</a>
-  - <a href="#elemento">Pseudo-Elementos CSS</a>
-  - <a href="#atributos">Selectores de atributos CSS</a>
-  - <a href="#forms">Forms CSS</a>
-  - <a href="#contadores">Contadores CSS</a>
-  - <a href="#transacciones">Transiciones CSS</a>
-  - <a href="#animaciones">Animaciones CSS</a>
-  - <a href="#transformaciones">Transformaciones 2D CSS</a>
-  - <a href="#transformaciones3">Transformaciones 3D CSS</a>
-- <a href="#desarrolloDeLaPractica">Desarrollo de la práctica</a>
-- <a href="#conclusionesYRecomendaciones">Conclusiones y recomendaciones</a>
+* Para nosotros ~~tachar~~ un texto se utilizan dos "~~".
 
-<a name="tema"></a>
-## Tema
-El tema de la práctica es: `Introducción a la Web`
+##Listas Ordenadas
 
-<a name="objetivos"></a>
-## Objetivos
-- Desarrollar el conocimiento acerca de las hojas de estilo en cascada.
-- Conocer los diferentes métodos que pueden ser utilizados mediante el uso de CSS para aplicar efectos visuales en nuestras páginas web.
+1. El número
+    * lista no ordenada 1 (dos espacios " " antes del astertisco)
+    * lista no ordenada 2 (dos espacios " " antes del astertisco)
+2. De las listas
+1. Ordenadas 
+    1. Esta si es una lista ordenada (con dos espacios " " antes de los números)
+    2. Esta es la segunda lista ordenada (con dos espacios " " antes de los números)
+4. no importa
 
-<a href="#cabecera">A la cabecera</a>
+## Links
 
-<a name="marcoTeorico"></a>
-## Marco teórico
+Para utilizar un [Link](https://github.com/Dario95/Tec_Web_Js2016_B/blob/master/Readme.md) debemos encerrar el texto en brackets [] y seguido del URL en paréntesis () 
 
-<a name="css"></a>
-### Cascading Style Sheets(CSS)
+##Imágenes 
 
- Hojas de Estilo en Cascada (Cascading Style Sheets) es el lenguaje utilizado para describir la presentación de documentos HTML o XML, esto incluye varios lenguajes basados en XML.
+Para nosotros utilizar imágenes debemos colocar un texto alternativo en bracjets [] después del caracter de exclamación ! y el link de la imagen entre paréntesis()
 
-(Fuente: [MDN](https://developer.mozilla.org/es/docs/Web/CSS))
+![Imagen de Js en color amarillo](https://lh3.googleusercontent.com/-CLNtMHm_YB8/AAAAAAAAAAI/AAAAAAAAAB8/toUGK2dqElY/w360-h203-p-rw/photo.jpg "Javascript")
 
-CSS es un lenguaje que describe el estilo de un documento HTML.
-Describe como los elementos de HTML deben ser mostrados.
+## Formateo de código
 
-<a href="#cabecera">A la cabecera</a>
+Para nosotros utilizar el formateo de codigo dentro de texto plano debemos de utilizar el caracter `Tilde invertida`
 
-<a name="combinators"></a>
-### CSS Combinators
+Para utilizar el formateo de codigo en un bloque de codigo necesitamos utilizar 3 `Tildes invertidas` donde se puede especificar el lenguaje de programacion a usarse para el formateo del codigo, justo despues de las 3 `Tildes invertidas`
 
- Un combinador expande la relación entre los selectores, un selector CSS puede contener mas de un selector simple. Entre los selectores simples se puede incluir un combinador.
-Hay cuatro diferentes combinadores:
-
-- selector descendente (espacio)
-- selector hijo(>)
-- selector hermano adyacente (+)
-- selector hermano general (~)
-
-(Fuente: [W3Schools](http://www.w3schools.com/css/css_combinators.asp))
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="box"></a>
-### CSS Box Model
-
- Todos los elementos HTML pueden ser considerados como cajas. En CSS, el termino "box model" es usado cuando se habla acerca de diseño y distribución.
- 
-(Fuente: [W3Schools](http://www.w3schools.com/css/css_boxmodel.asp))
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="clases"></a>
-### Pseudo-Clases CSS
-
-Una pseudo-clase es usada para definir un estado especial de un elemento. Por ejemplo, esta puede ser usada para:
-
-- Dar estilo a un elemento cuando se pasa el mouse sobre él.
-- Los estilos de enlaces visitados y no visitados sean diferentes.
-- Dar estilo a un elemento cuando este es enfocado.
- 
-(Fuente: [W3Schools](http://www.w3schools.com/Css/css_pseudo_classes.asp))
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="elemento"></a>
-### Pseudo-Elementos CSS
-
-Una pseudo-elemento es usado para dar estilo a partes específicas de un elemento. Por ejemplo, este puede ser usado para:
-
-- Dar estilo a la primera letra, o linea, de un elemento.
-- Insertar contenido antes, o después, del contenido de un elemento.
- 
-(Fuente: [W3Schools](http://www.w3schools.com/css/css_pseudo_elements.asp))
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="atributos"></a>
-### Selectores de atributos CSS
-
-Es posible dar estilo a elementos HTML que tienen atributos específicos o valores de atributos específicos.
- 
-(Fuente: [W3Schools](http://www.w3schools.com/css/css_attribute_selectors.asp))
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="forms"></a>
-### Forms CSS
-
-El aspecto de un form HTML puede ser bastante mejorado con CSS.
- 
-(Fuente: [W3Schools](http://www.w3schools.com/css/css_form.asp))
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="contadores"></a>
-### Contadores CSS
-
-Los contadores CSS son "variables" dentro de CSS cuyos valores pueden ser incrementados por las reglas CSS. Los contadores permiten ajustar la apariencia de un contenido base cuantas veces ellos sean usados.
- 
-(Fuente: [W3Schools](http://www.w3schools.com/css/css_counters.asp))
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="transacciones"></a>
-### Transiciones CSS
-
-Las transiciones CSS3 te permiten cambiar los valores de las propiedades suavemente (desde un valor a otro), durante una duración dada.
-
-`transition: width 2s;`
- 
-(Fuente: [W3Schools](http://www.w3schools.com/css/css3_transitions.asp))
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="animaciones"></a>
-### Animaciones CSS
-
-Las animaciones permiten animar la mayoría de elementos HTML sin utilizar JavaScript o Flash.
+* Bloque de código con `javascript`
 
 ```javascript
-@keyframes example {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
-}
+var mensaje="Hola mundo";
 ```
- 
-(Fuente: [W3Schools](http://www.w3schools.com/css/css_counters.asp))
 
-<a href="#cabecera">A la cabecera</a>
+* Bloque de código de una `consola`
 
-<a name="transformaciones"></a>
-### Transformaciones 2D CSS
-
-Las transformaciones CSS3 permiten trasladar, rotar, escalar, y desvanecer elementos. Es un efecto que le permite a un elemento cmabiar de forma, tamaño y posición.
- 
-(Fuente: [W3Schools](http://www.w3schools.com/css/css3_2dtransforms.asp))
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="transformaciones3"></a>
-### Transformaciones 3D CSS
-
-Las transformaciones CSS3 permiten trasladar, rotar, escalar, y desvanecer elementos. Es un efecto que le permite a un elemento cmabiar de forma, tamaño y posición.
- 
-(Fuente: [W3Schools](http://www.w3schools.com/css/css3_3dtransforms.asp))
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="desarrolloDeLaPractica"></a>
-## Desarrollo de la práctica
+```
+> apt-get install
+```
 
 
-### CSS (casacade style sheet)
-### Modificar estilos en html
+* Bloque de HTML
 
--
-  <p align="center">
-  <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/consola.jpg?raw=true" alt="Consola de Google Chrome" title="Consola de Google Chrome"/>
-  </p>
-  
+```
+<html>
+</html>
+```
+## Tablas
+
+Para usar tablas necesitamos definir las filas con | 
+
+|Columna 1 | Columna 2|Columna 3| Columna 4|
+|---|---|---|---|
+|Valor 1 C1|Valor 1 C2 |Valor 1 C3|Valor 1 C4|
+|Valor 2 C1|Valor 2 C2 |Valor 2 C3|Valor 2 C4|
+|Valor 3 C1|Valor 3 C2 |Valor 3 C3|Valor 3 C4|
+|Valor 4 C1|Valor 4 C2 |Valor 4 C3|Valor 4 C4|
 
 
+## Citas (no de humanos sino de texto)
 
-<a name="conclusionesYRecomendaciones"></a>
-## Conclusiones y recomendaciones
-- Se aprendió bastante acerca del funcionamiento interno del Internet, es una herramienta poderosa para nostros como futuros desarrolladores.
-- Entender los diferentes métodos, códigos y estándares es de vital utilidad para saber en qué estamos equivocandonos de ser el caso.
-- La programación web es diferente a los varios tipos de programación aprendidos previamente, por lo cual se debe prestar la respectiva atención a las bases de esta materia.
-- El uso de herramientas como postman o la consola de nuestro navegador nos permitirá manejar de mejor manera nuestros sitios web.
+Para escribir varias líneas de citas solamnete las concatenamos en la siuiente línea utilizando `>`:
 
-<a href="#cabecera">A la cabecera</a>
+> Yo solo se, que nada se.
+
+> Un filósofo random
+
+Sino utilizamos una cita en una línea con mayor que `>`
+
+> Y si me matas, ¿Me muero?.
+
+## Saltos de línea
+
+## Saltos de linea
+
+Para utilizar un salto de linea debemos de utilizar mas de 3 veces el caracter `-`
+---
+
+O el caracter `*`
+
+***
+
+O el caracter `__`
+
+___
+
+> Otro quote :) 
+
+## Videos de Youtube
+
+Es uso puro de HTML dentro de markdown
+<a href="https://www.youtube.com/watch?v=650s9uWWr1o" target="_blank"><img src="http://nodeframework.com/assets/img/js.png" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
