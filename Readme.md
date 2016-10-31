@@ -182,3 +182,26 @@ Las transformaciones CSS3 permiten trasladar, rotar, escalar, y desvanecer eleme
 
 <a href="#cabecera">A la cabecera</a>
 
+<a name="desarrolloDeLaPractica"></a>
+## Desarrollo de la práctica
+
+
+### CSS (casacade style sheet)
+### Modificar estilos en html
+
+-
+  <p align="center">
+  <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/consola.jpg?raw=true" alt="Consola de Google Chrome" title="Consola de Google Chrome"/>
+  </p>
+  
+
+
+
+<a name="conclusionesYRecomendaciones"></a>
+## Conclusiones y recomendaciones
+- Se aprendió bastante acerca del funcionamiento interno del Internet, es una herramienta poderosa para nostros como futuros desarrolladores.
+- Entender los diferentes métodos, códigos y estándares es de vital utilidad para saber en qué estamos equivocandonos de ser el caso.
+- La programación web es diferente a los varios tipos de programación aprendidos previamente, por lo cual se debe prestar la respectiva atención a las bases de esta materia.
+- El uso de herramientas como postman o la consola de nuestro navegador nos permitirá manejar de mejor manera nuestros sitios web.
+
+<a href="#cabecera">A la cabecera</a>
