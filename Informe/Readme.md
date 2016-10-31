@@ -189,19 +189,77 @@ Las transformaciones CSS3 permiten trasladar, rotar, escalar, y desvanecer eleme
 ### CSS (casacade style sheet)
 ### Modificar estilos en html
 
--
+- Se puede agregar estilos en la cabecera de nuestro documento HTML, especificando los elementos html a los cuales aplicaremos dichos estilos.
   <p align="center">
-  <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/HTML-01/Im%C3%A1genes/consola.jpg?raw=true" alt="Consola de Google Chrome" title="Consola de Google Chrome"/>
+  <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/02-Css/Informe/Gr%C3%A1ficos/estilosCode.jpg?raw=true" alt="Estilos HTML" title="Código de estilos en HTML"/>
+  </p>
+   
+   <p align="center">
+  <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/02-Css/Informe/Gr%C3%A1ficos/estilos.jpg?raw=true" alt="Estilos HTML" title="Estilos en HTML"/>
   </p>
   
+- Se pueden asignar estilos en forma de clases, de manera que se pueda asignar esatas claes a diferentes elementos.
 
+<p align="center">
+  <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/02-Css/Informe/Gr%C3%A1ficos/clasescode.jpg?raw=true" alt="Estilos en clases" title="Código de estilos en clases"/>
+  </p>
+   
+   <p align="center">
+  <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/02-Css/Informe/Gr%C3%A1ficos/clases.jpg?raw=true" alt="Estilos en clases" title="Estilos en clases"/>
+  </p>
+  
+- Estilos en tags.
 
+<p align="center">
+  <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/02-Css/Informe/Gr%C3%A1ficos/xtag.png?raw=true" alt="Estilos en tags" title="Código de estilos en tags"/>
+  </p>
+   
+- Estilo por ID
+   <p align="center">
+  <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/02-Css/Informe/Gr%C3%A1ficos/xid.png?raw=true" alt="Estilos por ID" title="Estilos por ID"/>
+  </p>
+  
+- Se puede crear un archivo `.css` para definir los diferentes estilos, y se los puede enlazar con nuestro documento HTML.
+   <p align="center">
+  <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/02-Css/Informe/Gr%C3%A1ficos/archivocss.png?raw=true" alt="Stylesheet" title="Stylesheet"/>
+  </p>
+  
+  <p align="center">
+  <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/02-Css/Informe/Gr%C3%A1ficos/stylesheet.png?raw=true" alt="Varios archivos CSS" title="Varios archivos CSS"/>
+  </p>
+  
+  <p align="center">
+  <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/02-Css/Informe/Gr%C3%A1ficos/variosCss.png?raw=true" alt="Varios archivos CSS" title="Varios archivos CSS"/>
+  </p>
 
+- Gracias al Inspector de nuestro navegador web podemos ver el orden en el cual los archivos que conforman nuestra página son cargados, y como cuando dos estilos se solapan se escoge el último en agregarse.
+
+<p align="center">
+  <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/02-Css/Informe/Gr%C3%A1ficos/ordenCss.png?raw=true" alt="Orden carga de stylesheets" title="Orden carga de stylesheets"/>
+  </p>
+  
+  <p align="center">
+  <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/02-Css/Informe/Gr%C3%A1ficos/anulacionCss.png?raw=true" alt="Orden carga de stylesheets sobre otros" title="Orden carga de stylesheets"/>
+  </p>
+ 
+ 
+### Un sitio Responsivo
+
+- Es importante recordar que el porcentaje CSS del Grid son 12 columnas de fluido.
+
+<p align="center">
+  <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/02-Css/Informe/Gr%C3%A1ficos/12.jpg?raw=true" alt="Còdigo rows 12" title="Còdigo rows 12"/>
+  </p>
+  
+  <p align="center">
+  <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/02-Css/Informe/Gr%C3%A1ficos/recursividad.jpg?raw=true" alt="Responsivo" title="Responsivo"/>
+  </p>
+
+  
 <a name="conclusionesYRecomendaciones"></a>
 ## Conclusiones y recomendaciones
-- Se aprendió bastante acerca del funcionamiento interno del Internet, es una herramienta poderosa para nostros como futuros desarrolladores.
-- Entender los diferentes métodos, códigos y estándares es de vital utilidad para saber en qué estamos equivocandonos de ser el caso.
-- La programación web es diferente a los varios tipos de programación aprendidos previamente, por lo cual se debe prestar la respectiva atención a las bases de esta materia.
-- El uso de herramientas como postman o la consola de nuestro navegador nos permitirá manejar de mejor manera nuestros sitios web.
+- Se aprendió bastante acerca del funcionamiento interno de CSS, es una herramienta útil a la hora de dar mejores efectos visuales a nuestra página web.
+- Entender los diferentes atributos, estilos y formas de aplicarlos es muy útil a la hora de dar una mejor presentación.
+- Es importante recordar que el porcentaje CSS del Grid son 12 columnas de fluido.
 
 <a href="#cabecera">A la cabecera</a>
