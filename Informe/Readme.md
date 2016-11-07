@@ -164,6 +164,7 @@ Optimización de motores de búsqueda (SEO) es el proceso de mejorar la clasific
 - Con la etiqueta `<kbd>` hacemos que el texto se asemeje a la entrada de un usuario.
 
 ```html
+
     <h1>Mi titulo <small> este texto es mas claro</small></h1>
     <h1>Mi ejemplo de codio</h1>
     <p>El tag para describir imagenes es: <code>&lt;img&gt;</code></p>
@@ -180,11 +181,13 @@ Optimización de motores de búsqueda (SEO) es el proceso de mejorar la clasific
 <p align="center">
     <img src="https://raw.githubusercontent.com/Dario95/Tec_Web_Js2016_B/Bootstrap/Informe/Gr%C3%A1ficos/etiquetas.jpg">
 </p>
-<br>
-<a href="#Cabecera">Cabecera</a>
 
-<a name="Tablas"></a>
+
+<a href="#cabecera">A la cabecera</a>
+
+
 ### Tablas
+
 La etiqueta `<table>` permite crear una nueva tabla, dentro de esta, indicamos las filas con la etiqueta `<tr>`, las cabeceras con la etiqueta `<th>` y los elementos con la etiqueta `<td>`.
 ```html
  <table <table>
@@ -206,9 +209,10 @@ La etiqueta `<table>` permite crear una nueva tabla, dentro de esta, indicamos l
     </table>
 ```
 <p align="center">
-    <img src="">
+    <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/Bootstrap/Informe/Gr%C3%A1ficos/tablasimple.jpg?raw=true">
 </p>
-<br>
+
+
 Con Bootstrap es posible aplicar diversos estilos a los diferentes elementos de nuestros sitios web, como las tablas y formularios.
 
 #### Tabla con Bootstrap con colores.
@@ -232,7 +236,7 @@ Con Bootstrap es posible aplicar diversos estilos a los diferentes elementos de 
     </table>
 ```
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Dario95/Tec_Web_Js2016_B/Bootstrap/Informe/Gr%C3%A1ficos/tabla.jpg" width="1000">
+    <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/Bootstrap/Informe/Gr%C3%A1ficos/tablaboots.jpg?raw=true" width="1000">
 </p>
 
 
@@ -257,7 +261,7 @@ Con Bootstrap es posible aplicar diversos estilos a los diferentes elementos de 
     </table>
 ```
 <p align="center">
-    <img src="" width="1000">
+    <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/Bootstrap/Informe/Gr%C3%A1ficos/tablares.jpg?raw=true" width="1000">
 </p>
 
 
@@ -265,7 +269,7 @@ Con Bootstrap es posible aplicar diversos estilos a los diferentes elementos de 
 
 <a name="Formularios"></a>
 ### Formularios con Bootstrap
-Con Bootstrap también podemos utilizar formularios que tengan un estilo en específico. Solamente debemos indicar a que clase pertenecen y añadirle los complementos necesarios para su funcionamiento.
+Con Bootstrap también podemos utilizar formularios que tengan un estilo en específico. Es importante recordar que bootstrap utiliza JQuery asi que este también deberá ser agregado previamente para contar con la funcionalidad de los Forms.
 ```html
 <div class="conteiner">
         <div class="row">
@@ -286,11 +290,15 @@ Con Bootstrap también podemos utilizar formularios que tengan un estilo en espe
     </div>
 ```
 <p align="center">
-    <img src="">
+    <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/Bootstrap/Informe/Gr%C3%A1ficos/form.jpg?raw=true">
 </p>
 <br>
-<a href="#Cabecera">Cabecera</a>
 
+<a href="#cabecera">A la cabecera</a>
+<a name="conclusionesYRecomendaciones"></a>
+## Conclusiones y recomendaciones
+- Se espera poder aplicar el framework para poder brindarle calidad a nuestros sitios web.
+- Es importante recordar que bootstrap utiliza JQuery asi que este también deberá ser agregado previamente para contar con la funcionalidad de los Forms.
+- El uso de herramientas como bootstrap nos permitirá ahorrar tiempo al momento del desarrollo web, ya que la reutilización de código es una buena práctica.
 
-
-
+<a href="#cabecera">A la cabecera</a>
