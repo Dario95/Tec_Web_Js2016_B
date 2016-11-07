@@ -7,7 +7,7 @@
 </p>
 
 ### Tema : `Bootstrap`
-### Fecha : `2016-11-08`
+### Fecha : `2016-10-26`
 ### Estudiante : `Homero Darío Arias Puente`
 ### Profesor : `Tania Calle - Adrian Eguez`
 ### Número de informe : `3`
