@@ -3,7 +3,7 @@
 ### Materia : `Tecnologías Web con JavaScript`
 
 <p align="center">
-<img src="https://www.all-statecredit.com/wordpress/wp-content/uploads/2015/07/javascript.png" alt="Logo JS" title="Logo JS" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/2000px-Boostrap_logo.svg.png" alt="Logo Bootstrap" title="Logo Bootstrap" />
 </p>
 
 ### Tema : `Bootstrap`
@@ -154,4 +154,143 @@ Optimización de motores de búsqueda (SEO) es el proceso de mejorar la clasific
 (Fuente: [W3Schools](http://w3schools.bootcss.com/website/web_search.html))
 
 <a href="#cabecera">A la cabecera</a>
+
+<a name="desarrolloDeLaPractica"></a>
+## Desarrollo de la práctica
+
+### Etiquetas small, code, kbd.
+- La etiqueta `<small>` sirve para que el texto sea más pequeño y un poco más claro.
+- La etiqueta `<code>` hace quel texto se visualice como si fuera código, con `&lt` y `&gt` colocamos '<' y '>' respectivamente.
+- Con la etiqueta `<kbd>` hacemos que el texto se asemeje a la entrada de un usuario.
+
+```html
+    <h1>Mi titulo <small> este texto es mas claro</small></h1>
+    <h1>Mi ejemplo de codio</h1>
+    <p>El tag para describir imagenes es: <code>&lt;img&gt;</code></p>
+
+    <h2>User inputs con bootstrap</h2>
+    <p>No esta permitido por ejemplo el
+        <kbd>
+       <kdb>ctrl</kdb>
+       +
+       <kbd>,</kbd>
+        </kbd>
+    </p>
+```
+<p align="center">
+    <img src="https://raw.githubusercontent.com/Dario95/Tec_Web_Js2016_B/Bootstrap/Informe/Gr%C3%A1ficos/etiquetas.jpg">
+</p>
+<br>
+<a href="#Cabecera">Cabecera</a>
+
+<a name="Tablas"></a>
+### Tablas
+La etiqueta `<table>` permite crear una nueva tabla, dentro de esta, indicamos las filas con la etiqueta `<tr>`, las cabeceras con la etiqueta `<th>` y los elementos con la etiqueta `<td>`.
+```html
+ <table <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td class="active">Jill</td>
+            <td class="active">Smith</td>
+            <td class="active">50</td>
+        </tr>
+        <tr>
+            <td class="success">Eve</td>
+            <td class="success">Jackson</td>
+            <td class="success">94</td>
+        </tr>
+    </table>
+```
+<p align="center">
+    <img src="">
+</p>
+<br>
+Con Bootstrap es posible aplicar diversos estilos a los diferentes elementos de nuestros sitios web, como las tablas y formularios.
+
+#### Tabla con Bootstrap con colores.
+```html
+<table <table class="table">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td class="active">Jill</td>
+            <td class="active">Smith</td>
+            <td class="active">50</td>
+        </tr>
+        <tr>
+            <td class="success">Eve</td>
+            <td class="success">Jackson</td>
+            <td class="success">94</td>
+        </tr>
+    </table>
+```
+<p align="center">
+    <img src="https://raw.githubusercontent.com/Dario95/Tec_Web_Js2016_B/Bootstrap/Informe/Gr%C3%A1ficos/tabla.jpg" width="1000">
+</p>
+
+
+#### Tabla con enfoque
+```html
+<table class="table table-hover">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td class="active">Jill</td>
+            <td class="active">Smith</td>
+            <td class="active">50</td>
+        </tr>
+        <tr>
+            <td class="success">Eve</td>
+            <td class="success">Jackson</td>
+            <td class="success">94</td>
+        </tr>
+    </table>
+```
+<p align="center">
+    <img src="" width="1000">
+</p>
+
+
+<a href="#Cabecera">Cabecera</a>
+
+<a name="Formularios"></a>
+### Formularios con Bootstrap
+Con Bootstrap también podemos utilizar formularios que tengan un estilo en específico. Solamente debemos indicar a que clase pertenecen y añadirle los complementos necesarios para su funcionamiento.
+```html
+<div class="conteiner">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <form>
+                    <div class="input-group">
+                        <div class="input-group-addon">Holi</div>
+                        <input type="text" class="form-control" id="exampleInputAmount" placeholder="k ace">
+                        <div class="input-group-addon">boli</div>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+```
+<p align="center">
+    <img src="">
+</p>
+<br>
+<a href="#Cabecera">Cabecera</a>
+
+
+
 
