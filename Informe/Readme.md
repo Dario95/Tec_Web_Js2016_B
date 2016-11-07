@@ -3,7 +3,7 @@
 ### Materia : `Tecnologías Web con JavaScript`
 
 <p align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/2000px-Boostrap_logo.svg.png" alt="Logo Bootstrap" title="Logo Bootstrap" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/2000px-Boostrap_logo.svg.png" alt="Logo Bootstrap" title="Logo Bootstrap" width="300" />
 </p>
 
 ### Tema : `Bootstrap`
