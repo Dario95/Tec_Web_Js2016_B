@@ -48,9 +48,70 @@
             console.log(count);
             count-=2;
         }
+        numSheep=4;
+        for(monthNumber=1;monthNumber<=monthsToPrint;monthNumber++){
+            numSheep=numSheep*4;
+            
+            if(monthNumber%4===0){
+              
+              console.log("Fueron removidas"+(numSheep*3/4));
+                numSheep=numSheep*1/4;
+            }
+            else if(numSheep>10000){
+                numSheep=numSheep/2;  
+            
+            }
+              console.log("There will be "+numSheep+" sheep after "+monthNumber+" month(s)");  
+            
+            
+        }
+        
+       /* var res=prompt("¿Qué le pasa a Lupita?");
+        console.log(res);
+        res=prompt("¿Qué le pasa lupita?");
+        console.log(res);
+        res=prompt("¿Qué le pasa esa niña?");
+        console.log(res);
+        res=prompt("¿Qué es lo que quiere?");
+        console.log(res);
+        res=prompt("¿Por que ella no baila?");
+        console.log(res);
+        res=prompt("¿Qué le dice su papá?");
+        console.log(res);
+        res=prompt("¿Qué le dice su mamá?");
+        console.log(res);
+        res=prompt("¿Qué le baila lupita?");
+        console.log(res);*/
+    /*    
+        var a=parseInt(prompt("Ingrese primer numero"));
+        var b=parseInt(prompt("Ingrese segundo numero"));
+        var c=parseInt(prompt("Ingrese tercer numero"));
+       */ 
         
         
+        /*function multiplicar(a,b,c){
+            return(a*b*c);
+        }
+        function mayor(a,b){
+            if(a>b){
+                return "el mayor es"+a;
+            }
+            else if(b>a){
+                return "el mayor es"+b; 
+            }else{
+                return "son iguales";
+            }
+        }*/
         
+        console.log(multiplicar(a,b,c));
+        console.log(mayor(a,b));
+        
+        function feedPerRanger(sheeps,rangers){
+         return sheeps*2/rangers;
+        }
+        
+        
+        alert(feedPerRanger(1000,50));
     </script>
     
     
