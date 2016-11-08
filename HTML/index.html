@@ -6,6 +6,7 @@
     <script>
         console.log("aqui empieza");
         var count=10;
+        var arregloNumero=[];
         while(count>0){
             if(count%2===0){
             console.log(count+" es par");
@@ -14,11 +15,14 @@
                 
                 
             }
+                arregloNumero.push(count);
                 count --;
-                
         }
         
         console.log("aqui Termina");
+        arregloNumero.pop();
+        arregloNumero.splice(4,3);
+        console.log(arregloNumero);
     </script>
     
     
