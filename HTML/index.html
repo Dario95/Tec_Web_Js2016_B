@@ -112,13 +112,33 @@
         
         alert(feedPerRanger(4,2));*/
 
-    var movie1 =[16,"Candies"];
+   /* var movie1 =[16,"Candies"];
     var movie2 =[3,"Men","and","a","Baby"];
     var eightisMovies =[movie1,movie2];
      console.log(eightisMovies);
         var infant=eightisMovies[1][4];
-        console.log(infant);
-    
+        console.log(infant);*/
+        var count=0;
+        function funcionCalcularString(arreglo){
+            
+            for(var i=0;i<arreglo.length;i++){
+                if((typeof arreglo[i])=='string'){ 
+                count++;}
+                    }
+            console.log("hay"+count+"strings en el arreglo");
+        }
+        
+        
+        var arreglo = [1,"2",3,"4",5,'seis'];
+        funcionCalcularString(arreglo);
+        console.log(typeof 1);
+        console.log(typeof "1");
+        console.log(typeof []);
+        console.log(typeof {});
+        console.log(typeof true);
+        console.log(typeof false);
+        console.log(typeof 1.2);
+        console.log(typeof arreglo);
     </script>
     
     
