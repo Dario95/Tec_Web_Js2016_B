@@ -21,8 +21,23 @@
         
         console.log("aqui Termina");
         arregloNumero.pop();
-        arregloNumero.splice(4,3);
+        //la posicion, el numero de elementos a eliminar, el numero por el cual se reemplazara al primer elemento desde dicha posicion
+        arregloNumero.splice(4,1,2);
         console.log(arregloNumero);
+        
+        //ejercicio
+        var numSheep=4;
+        var monthNumber=1;
+        var monthsToPrint=12;
+        
+        while(monthNumber<=monthsToPrint){
+            numSheep=numSheep*4;
+            console.log("There will be "+numSheep+" sheep after "+monthNumber+" month(s)");
+            monthNumber++;
+        }
+        
+        
+        
     </script>
     
     
