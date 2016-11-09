@@ -6,7 +6,7 @@
     <script>
      
      
-        
+   /*     
         function vieja(){
             console.log("vieja");
             
@@ -52,7 +52,34 @@
         console.log(puzzlers[0](5));
         console.log(puzzlers[1](5));
         console.log(puzzlers[2](5));
-        console.log(puzzlers[3](5));
+        console.log(puzzlers[3](5));*/
+        
+        
+        
+        var n=prompt("1 2 o 3");
+        n=parseInt(n);
+        function adventureSelector(userChoise){
+            switch(userChoise){
+                case 1:
+                    return function(){
+                        console.log("Has seleccionado Vines of Doom!");
+                    }
+                    break;
+                case 2:
+                    return function(){
+                        console.log("HasLooks like you want the Lake of Despair!");
+                    }
+                    break;
+                case 3:
+                    return function(){
+                        console.log("The Caves of Catastrophe!");
+                    }
+                    break;
+                
+            }
+            
+        }
+        console.log(adventureSelector(n)());
     </script>
     
 </head>
