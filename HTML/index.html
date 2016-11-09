@@ -4,143 +4,30 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <script>
-       /* console.log("aqui empieza");
-        var count=10;
-        var arregloNumero=[];
-        while(count>0){
-            if(count%2===0){
-            console.log(count+" es par");
-            }else{
-            console.log(count+" es impar");
-                
-                
-            }
-                arregloNumero.push(count);
-                count --;
-        }
+     
+     
         
-        console.log("aqui Termina");
-        arregloNumero.pop();
-        //la posicion, el numero de elementos a eliminar, el numero por el cual se reemplazara al primer elemento desde dicha posicion
-        arregloNumero.splice(4,1,2);
-        console.log(arregloNumero);
-        
-        //ejercicio
-        var numSheep=4;
-        var monthNumber=1;
-        var monthsToPrint=12;
-        
-        while(monthNumber<=monthsToPrint){
-            numSheep=numSheep*4;
-            console.log("There will be "+numSheep+" sheep after "+monthNumber+" month(s)");
-            monthNumber++;
-        }
-        
-        for(monthNumber=1;monthNumber<=monthsToPrint;monthNumber++){
-            numSheep=numSheep*4;
-            console.log("There will be "+numSheep+" sheep after "+monthNumber+" month(s)");
+        function vieja(){
+            console.log("vieja");
             
-        }*/
-        
-        /*count=10;
-        
-        while(count>=2){
-            console.log(count);
-            count-=2;
         }
-        numSheep=4;
-        for(monthNumber=1;monthNumber<=monthsToPrint;monthNumber++){
-            numSheep=numSheep*4;
-            
-            if(monthNumber%4===0){
-              
-              console.log("Fueron removidas"+(numSheep*3/4));
-                numSheep=numSheep*1/4;
-            }
-            else if(numSheep>10000){
-                numSheep=numSheep/2;  
-            
-            }
-              console.log("There will be "+numSheep+" sheep after "+monthNumber+" month(s)");  
-            
-            
-        }*/
-        
-       /* var res=prompt("¿Qué le pasa a Lupita?");
-        console.log(res);
-        res=prompt("¿Qué le pasa lupita?");
-        console.log(res);
-        res=prompt("¿Qué le pasa esa niña?");
-        console.log(res);
-        res=prompt("¿Qué es lo que quiere?");
-        console.log(res);
-        res=prompt("¿Por que ella no baila?");
-        console.log(res);
-        res=prompt("¿Qué le dice su papá?");
-        console.log(res);
-        res=prompt("¿Qué le dice su mamá?");
-        console.log(res);
-        res=prompt("¿Qué le baila lupita?");
-        console.log(res);*/
-    /*    
-        var a=parseInt(prompt("Ingrese primer numero"));
-        var b=parseInt(prompt("Ingrese segundo numero"));
-        var c=parseInt(prompt("Ingrese tercer numero"));
-       */ 
-        
-        
-        /*function multiplicar(a,b,c){
-            return(a*b*c);
-        }
-        function mayor(a,b){
-            if(a>b){
-                return "el mayor es"+a;
-            }
-            else if(b>a){
-                return "el mayor es"+b; 
-            }else{
-                return "son iguales";
-            }
-        }*/
-        
-        /*console.log(multiplicar(a,b,c));
-        console.log(mayor(a,b));
-       */ /*
-        function feedPerRanger(sheeps,rangers){
-         return (sheeps*2/rangers).toFixed(2);
-        }
-        
-        alert(feedPerRanger(4,2));*/
-
-   /* var movie1 =[16,"Candies"];
-    var movie2 =[3,"Men","and","a","Baby"];
-    var eightisMovies =[movie1,movie2];
-     console.log(eightisMovies);
-        var infant=eightisMovies[1][4];
-        console.log(infant);*/
-        var count=0;
-        function funcionCalcularString(arreglo){
-            
-            for(var i=0;i<arreglo.length;i++){
-                if((typeof arreglo[i])=='string'){ 
-                count++;}
-                    }
-            console.log("hay"+count+"strings en el arreglo");
-        }
-        
-        
-        var arreglo = [1,"2",3,"4",5,'seis'];
-        funcionCalcularString(arreglo);
-        console.log(typeof 1);
-        console.log(typeof "1");
-        console.log(typeof []);
-        console.log(typeof {});
-        console.log(typeof true);
-        console.log(typeof false);
-        console.log(typeof 1.2);
-        console.log(typeof arreglo);
-    </script>
+      
+        vieja();
     
+    var passengers=[['Tomas','Meeks'],['Greg','Pollack'],['Christine','Wong'],['Dan','McGaw']];
+    
+ 
+    var arreglo= passengers.map(function(arrayNombreApellido){
+        return (arrayNombreApellido[0]+' '+arrayNombreApellido[1]);
+        
+    });
+        console.log(arreglo);
+        
+        
+        arreglo.map(function(arr){
+            alert('Yo me llamo '+arr);
+        });
+    </script>
     
 </head>
 <body>
