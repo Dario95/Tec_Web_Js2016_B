@@ -56,7 +56,7 @@
         
         
         
-        var n=prompt("1 2 o 3");
+       /* var n=prompt("1 2 o 3");
         n=parseInt(n);
         function adventureSelector(userChoise){
             switch(userChoise){
@@ -79,7 +79,43 @@
             }
             
         }
-        console.log(adventureSelector(n)());
+        console.log(adventureSelector(n)());*/
+        
+        
+         var puzzlers=[ 
+            
+            function(input){
+                return (8*input-10);
+            },
+            
+            function(input){
+            return (Math.pow(input-3,3));
+            },
+        
+            function(input){
+                return (Math.pow(input,2)+4);
+            },
+        
+            function(input){
+                return (input%5);
+            }
+            
+            ]
+         console.log(puzzlers[3](puzzlers[2](puzzlers[1](puzzlers[0](2)))));
+        
+        var applyAndEmpty=function(input,queque){
+            var tamani=queque.length;
+          for(var i=0;i<tamani;i++){
+             input=queque[0](input); 
+             queque.shift(); console.log("iteracion"+i+":"+input);
+            
+          }
+            console.log(queque);
+            return input;
+        };
+        
+        console.log(puzzlers.length);
+        console.log('El resultado:'+applyAndEmpty(2,puzzlers));
     </script>
     
 </head>
