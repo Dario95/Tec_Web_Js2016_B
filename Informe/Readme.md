@@ -1,4 +1,4 @@
-# JavaScript
+# JavaScript Parte 2
 
 ### Materia : `Tecnologías Web con JavaScript`
 
@@ -6,11 +6,11 @@
 <img src="https://www.all-statecredit.com/wordpress/wp-content/uploads/2015/07/javascript.png" alt="Logo JS" title="Logo JS" />
 </p>
 
-### Tema : `JavaScript`
+### Tema : `JavaScript Parte 2`
 ### Fecha : `2016-11-08`
 ### Estudiante : `Homero Darío Arias Puente`
 ### Profesor : `Tania Calle - Adrian Eguez`
-### Número de informe : `3`
+### Número de informe : `5`
 
 ---
 <a name="cabecera"></a>
@@ -166,3 +166,8 @@ Optimización de motores de búsqueda (SEO) es el proceso de mejorar la clasific
 (Fuente: [W3Schools](http://w3schools.bootcss.com/website/web_search.html))
 
 <a href="#cabecera">A la cabecera</a>
+
+
+## Funciones en arreglos
+
+Con `push()` 
