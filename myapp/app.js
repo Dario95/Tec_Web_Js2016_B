@@ -1,30 +1,46 @@
 var express = require('express');
 var app = express();
-
-app.get('/Javascript', function (req, res) {
-//request=req
- 
-  console.log('Lo que tengo en el req!');
-console.log(req);
-  console.log('Lo que tengo en el res!');
-    console.log(res);
-    
-      console.log('Cabeceras req!');
-console.log(req.headers);
-  console.log('Cabeceras res!');
-    console.log(res.headers);
-  //response=res
-    
-    var usuario ={
-        nombre: 'Homero',
-        cedula:'1751230820'
+var usuarios=[
+    {
+        id:1,
+        nombre:'Pepe',
+        cedula:'1234567890'
+        
+    },
+    {
+        id:2,
+        nombre:'Carlos',
+        cedula:'097854621'
+        
+    },
+    {
+        id:3,
+        nombre:'Juan',
+        cedula:'15478632568'
         
     }
-    usuario.apellido='Arias';
-    usuario.mascotas=["perro","gato"];
-    usuario.casado='no';
-    res.json(usuario);
- // res.send('Hello World!');
+    
+    
+]
+
+app.get('/Javascrip/Usuario/', function (req, res) {
+res.json(usuarios);
+});
+        
+app.get('/Javascrip/Usuario/:idUsuario', function (req, res) {
+  
+    var parametros=req.params.idUsuario;
+    console.log(parametros+""+usuarios[0].id);
+    if(parametros==usuarios[0].id)
+    {
+        res.json(usuarios[0]);
+    }else if(parametros==usuarios[1].id){
+      res.json(usuarios[1]);  
+    }else if(parametros==usuarios[2].id){
+        res.json(usuarios[2]);
+    }else{
+        res.send('No se encontro usuario');
+    }
 });
 app.post('/Javascript', function (req, res) {
   res.send('Metodo POST!');
