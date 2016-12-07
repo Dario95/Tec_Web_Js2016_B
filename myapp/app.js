@@ -1,5 +1,8 @@
 var express = require('express');
 var app = express();
+var fs=require('fs');
+
+fs.readFile('./paginas/pagina.html');
 var usuarios=[
     {
         id:1,
@@ -45,19 +48,19 @@ app.get('/Javascrip/Usuario/:idUsuario', function (req, res) {
 
 
 
-app.post('/Javascript', function (req, res) {
-  console.log(req.query.nombre);
-  console.log(req.query.cedula);
+app.get('/Javascript', function (req, res) {
+    var cont=usuarios.length;
+  console.log(usuarios.length);
     
-    if(req.query.nombre){
-      
-   res.sean('No v)   
-  }
+    var nuevo={
+        id:++cont,
+        nombre:req.query.nombre,
+        cedula:req.query.cedula        
+    }
     
-   if(req.query.cedula){
-       
-       
-   }
+    usuarios.push(nuevo)
+    
+    res.json(usuarios);
 });
 app.put('/Javascript', function (req, res) {
   res.send('Metodo PUT!');
