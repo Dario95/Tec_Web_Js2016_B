@@ -49,15 +49,15 @@ app.post('/Javascript', function (req, res) {
   console.log(req.query.nombre);
   console.log(req.query.cedula);
     
-//    if(req.query.nombre){
-//      
-//      
-//  }
-//    
-//   if(req.query.cedula){
-//       
-//       
-//   }
+    if(req.query.nombre){
+      
+   res.sean('No v)   
+  }
+    
+   if(req.query.cedula){
+       
+       
+   }
 });
 app.put('/Javascript', function (req, res) {
   res.send('Metodo PUT!');
