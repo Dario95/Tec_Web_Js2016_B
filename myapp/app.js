@@ -2,7 +2,21 @@ var express = require('express');
 var app = express();
 var fs=require('fs');
 
-fs.readFile('./paginas/pagina.html');
+var quePasa='';
+quePasa='esta por leer el archivo'
+console.log(quePasa);
+
+fs.readFile('./paginas/pagina.html',
+            'utf8'
+            ,function(error,archivoLeido){
+    console.log(error);
+    console.log(archivoLeido);
+    
+    
+});
+quePasa='termino leer el archivo'
+console.log(quePasa);
+
 var usuarios=[
     {
         id:1,
