@@ -2,21 +2,33 @@ var express = require('express');
 var app = express();
 var fs=require('fs');
 
+app.get('/LeerArchivo', function (req, res) {
 var quePasa='';
-quePasa='esta por leer el archivo'
+quePasa='1 esta por leer el archivo'
 console.log(quePasa);
 
 fs.readFile('./paginas/pagina.html',
             'utf8'
             ,function(error,archivoLeido){
-    console.log(error);
-    console.log(archivoLeido);
+    console.log('3'+error);
+    console.log('4'+archivoLeido);
+    fs.readFile('./paginas/usuario.html',
+            'utf8'
+            ,function(error,archivo2){
+        
+        fs.readFile('./paginas/footer.html',
+            'utf8'
+            ,function(error,archivo3){
+        
+        res.send(archivoLeido+archivo2+archivo3);
+    });
+    });
     
     
 });
-quePasa='termino leer el archivo'
+quePasa='2 termino leer el archivo'
 console.log(quePasa);
-
+});
 var usuarios=[
     {
         id:1,
