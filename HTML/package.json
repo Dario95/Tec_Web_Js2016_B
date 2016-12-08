@@ -1,11 +1,11 @@
 {
   "name": "javascripthomero",
-  "version": "1.0.2",
-  "description": "Clase de introduccion a la web",
+  "version": "1.0.6",
+  "description": "",
   "main": "suma.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Homero Arias",
   "license": "MIT"
 }

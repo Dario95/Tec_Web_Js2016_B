@@ -56,3 +56,110 @@ Desde la versión 0.6.3 de Node.js npm es instalado automáticamente con el ento
 (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Npm))
 
 <a href="#cabecera">A la cabecera</a>
+
+
+<a name="Desarrollo"></a>
+## Desarrollo de la práctica
+
+
+1) Primero es necesario instalar Node.js. Podemos descargar Node.js desde [NodeJS](https://nodejs.org/es/).
+
+<p align="center">
+<img src="">
+</p>
+
+2) Abrir el cmd y ejecutamos el comando `node`.
+
+<p align="center">
+<img src="">
+</p>
+
+3) Ahora podemos utilizar javascript.
+
+<p align="center">
+<img src="">
+</p>
+
+4) Para salir del node es necesario utilizar *control+c* dos veces.
+
+5) Podemos ejecutar un archivo ´.js´ con el comando ´node archivo.js´.
+
+6) Primero crearemos un archivo ´suma.js´:
+
+
+```javascript
+var i = 12;
+var j = 23;
+console.log("hola"+(i+j));
+
+console.log("hola"+(i+j));
+
+
+  var suma= function(numero1,numero2) {
+    return (numero1+numero2);
+  }
+
+console.log("Resultado"+suma(58,5));
+```
+
+
+7) Nos movemos a la carpeta donde está nuestro archivo js, el cuál utilizaremos para crear un paquete json. Escribimos `npm init` para crearlo.
+
+8) Es necesario llenar la información solicitada y al final aceptamos con *yes*.
+* Hay que fijarnos que el campo *main* debe contener el nombre de nuestro script.
+
+<p align="center">
+<img src="">
+</p>
+
+9) Podemos observar que se crea un archivo Json en la carpeta donde nos encontramos con la información de nuestro paquete.
+
+<p align="center">
+<img src="">
+</p>
+
+<p align="center">
+<img src="">
+</p>
+
+
+
+10) Para subir paquetes al internet es necesario tener una cuenta en npm. Podemos hacerlo desde enlace [Crear cuenta npm](https://www.npmjs.com/signup) y realizamos el registro.
+
+11) Ahora iniciamos sesión con esta cuenta. Usamos el comando `npm login` y llenamos los campos.
+
+<p align="center">
+<img src="">
+</p>
+
+12) Publicamos nuestro paquete con el comando `npm publish`.
+
+<p align="center">
+<img src="">
+</p>
+
+13) En la página web, observamos que, efectivamente, el paquete ha sido publicado.
+
+<p align="center">
+<img src="">
+</p>
+
+14) Para descargar un paquete usamos `npm i -g nombrepaquete`.
+* Para una instalación global utilizaremos la opción ´-g´, y para una local, solo basta con omitirlo.
+* El paquete se instalará en la carpeta mostrada en consola.
+
+<p align="center">
+<img src="">
+</p>
+
+
+15) Observamos que efectivamente, el paquete se ha descargado.
+
+<p align="center">
+<img src="">
+</p>
+
+16) Si se desea eliminar un paquete usamos `npm uninstall nombrepaquete`.
+
+<br>
+<a href="#Cabecera">A la cabecera</a>
