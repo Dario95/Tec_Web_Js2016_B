@@ -50,7 +50,7 @@ Node.js es un entorno en tiempo de ejecución multiplataforma, de código abiert
 <a href="#cabecera">A la cabecera</a>
 <a name="npm"></a>
 ### NPM
-´npm´ es el manejador de paquetes por defecto para Node.js, un entorno de ejecución para JavaScript .
+`npm` es el manejador de paquetes por defecto para Node.js, un entorno de ejecución para JavaScript .
 Desde la versión 0.6.3 de Node.js npm es instalado automáticamente con el entorno. npm se ejecuta desde la linea de comandos y maneja las dependencias para una aplicación.1 2 Además, permite a los usuarios instalar aplicaciones Node.js que se encuentran en el repositorio. npm está escrito enteramente en JavaScript y fue desarrollado por Isaac Z. Schlueter a raíz de la frustración que experimentó mientras trabajando con CommonJS 
 
 (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Npm))
@@ -65,27 +65,24 @@ Desde la versión 0.6.3 de Node.js npm es instalado automáticamente con el ento
 1) Primero es necesario instalar Node.js. Podemos descargar Node.js desde [NodeJS](https://nodejs.org/es/).
 
 <p align="center">
-<img src="">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/07-markup/Informe/Graficos/descargaNode.jpg?raw=true">
 </p>
 
 2) Abrir el cmd y ejecutamos el comando `node`.
 
 <p align="center">
-<img src="">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/07-markup/Informe/Graficos/cmdNode.jpg?raw=true">
 </p>
 
 3) Ahora podemos utilizar javascript.
 
 <p align="center">
-<img src="">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/07-markup/Informe/Graficos/ejecutarJS.jpg?raw=true">
 </p>
 
 4) Para salir del node es necesario utilizar *control+c* dos veces.
 
-5) Podemos ejecutar un archivo ´.js´ con el comando ´node archivo.js´.
-
-6) Primero crearemos un archivo ´suma.js´:
-
+5) Primero crearemos un archivo `suma.js`:
 
 ```javascript
 var i = 12;
@@ -102,6 +99,10 @@ console.log("hola"+(i+j));
 console.log("Resultado"+suma(58,5));
 ```
 
+6) Podemos ejecutar un archivo `.js` con el comando `node archivo.js`.
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/07-markup/Informe/Graficos/nodeArchivoJs.jpg?raw=true">
+</p>
 
 7) Nos movemos a la carpeta donde está nuestro archivo js, el cuál utilizaremos para crear un paquete json. Escribimos `npm init` para crearlo.
 
@@ -109,17 +110,17 @@ console.log("Resultado"+suma(58,5));
 * Hay que fijarnos que el campo *main* debe contener el nombre de nuestro script.
 
 <p align="center">
-<img src="">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/07-markup/Informe/Graficos/npmInit.jpg?raw=true">
 </p>
 
 9) Podemos observar que se crea un archivo Json en la carpeta donde nos encontramos con la información de nuestro paquete.
 
 <p align="center">
-<img src="">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/07-markup/Informe/Graficos/jason.jpg?raw=true">
 </p>
 
 <p align="center">
-<img src="">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/07-markup/Informe/Graficos/jasonOpen.jpg?raw=true">
 </p>
 
 
@@ -129,37 +130,48 @@ console.log("Resultado"+suma(58,5));
 11) Ahora iniciamos sesión con esta cuenta. Usamos el comando `npm login` y llenamos los campos.
 
 <p align="center">
-<img src="">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/07-markup/Informe/Graficos/loginNpm.jpg?raw=true">
 </p>
 
 12) Publicamos nuestro paquete con el comando `npm publish`.
 
 <p align="center">
-<img src="">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/07-markup/Informe/Graficos/npmPublish.jpg?raw=true">
 </p>
 
-13) En la página web, observamos que, efectivamente, el paquete ha sido publicado.
+13) En nuestro perfil podemos observamos que el paquete ha sido publicado.
 
 <p align="center">
-<img src="">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/07-markup/Informe/Graficos/dario95.jpg?raw=true">
 </p>
 
 14) Para descargar un paquete usamos `npm i -g nombrepaquete`.
-* Para una instalación global utilizaremos la opción ´-g´, y para una local, solo basta con omitirlo.
+* Para una instalación global utilizaremos la opción `-g`, y para una local, solo basta con omitirlo.
 * El paquete se instalará en la carpeta mostrada en consola.
 
 <p align="center">
-<img src="">
+<img src="https://raw.githubusercontent.com/Dario95/Tec_Web_Js2016_B/07-markup/Informe/Graficos/install.jpg">
 </p>
 
 
 15) Observamos que efectivamente, el paquete se ha descargado.
 
 <p align="center">
-<img src="">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/07-markup/Informe/Graficos/nodeModules.jpg?raw=true">
 </p>
 
 16) Si se desea eliminar un paquete usamos `npm uninstall nombrepaquete`.
 
 <br>
 <a href="#Cabecera">A la cabecera</a>
+
+<a name="Conclusiones y Recomendaciones"></a>
+## Conclusiones y Recomendaciones
+* Se aprendió el manejo básico de Node.js y npm.
+* Publicar paquetes permite, a aprte de colaborar con las demás personas, poder reutilizar nuestro código de una manera fácil y práctica.
+* Es necesario mantener sencillo el código para que pueda ser entendido por otros.
+
+<br>
+<a href="#Cabecera">A la cabecera</a>
+
+Autor: [Homero Arias](https://github.com/Dario95/Tec_Web_Js2016_B)
