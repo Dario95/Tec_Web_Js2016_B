@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr" class="uk-touch">
+
+<head>
+  <script src="https://getuikit.com/vendor/jquery.js"></script>
+  <link id="data-uikit-theme" rel="stylesheet" href="https://getuikit.com/docs/css/uikit.docs.min.css">
+  <link rel="stylesheet" href="https://getuikit.com/docs/css/docs.css">
+  <script src="https://getuikit.com/docs/js/uikit.min.js"></script>
+  <script src="https://getuikit.com/docs/js/docs.js"></script>
+</head>
+
+
+<body>
+  <nav class="tm-navbar uk-navbar uk-navbar-attached">
+    <div class="uk-container uk-container-center">
+
+      <div class="uk-navbar-brand uk-navbar-nav-subtitle uk-hidden-small">Homero Arias & Juan Erazo
+        <div><a href="https://getuikit.com/index.html">Uikit</a></div>
+      </div>
+
+      <ul class="uk-navbar-nav uk-hidden-small">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="uk-parent" data-uk-dropdown="" aria-haspopup="true" aria-expanded="false">
+          <a>Temas <i class="uk-icon-caret-down"></i></a>
+
+          <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" aria-hidden="true" tabindex="" style="top: 40px; left: 0px;">
+            <ul class="uk-nav uk-nav-navbar">
+              <li class="uk-nav-header">Temas</li>
+              <li><a href="varletconst.html">Var vs let vs const</a></li>
+              <li><a href="iifes.html">IIFEs ahora Blocks</a></li>
+              <li><a href="string.html">Strings .includes() .repeat()</a></li>
+              <li><a href="template.html">Template literals</a></li>
+              <li><a href="array.html">Destructuring arrays</a></li>
+              <li><a href="object.html">Destructuring objects</a></li>
+              <li><a href="modules.html">Modules export and import</a></li>
+              <li><a href="parameters.html">Default Parameters, Rest Parameters, Named Parameters</a></li>
+              <li><a href="spread.html">Spread Operator</a></li>
+              <li><a href="classes.html">Classes</a></li>
+              <li><a href="promises.html">Promises (goodbye callback hell)</a></li>
+              <li><a href="getset.html">Getter and Setter in Classes</a></li>
+            </ul>
+          </div>
+
+        </li>
+      </ul>
+
+      <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+
+      <div class="uk-navbar-brand uk-navbar-center uk-visible-small uk-navbar-nav-subtitle">H.Arias & J.Erazo
+        <div><a href="https://getuikit.com/index.html">Uikit</a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <div id="tm-offcanvas" class="uk-offcanvas" aria-hidden="true">
+    <div class="uk-offcanvas-bar" mode="push">
+      <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{multiple:true}">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="uk-nav-header">Temas</li>
+        <li><a href="varletcons.htmlt">Var vs let vs const</a></li>
+        <li><a href="iifes.html">IIFEs ahora Blocks</a></li>
+        <li><a href="string.html">Strings .includes() .repeat()</a></li>
+        <li><a href="template.html">Template literals</a></li>
+        <li><a href="array.html">Destructuring arrays</a></li>
+        <li><a href="object.html">Destructuring objects</a></li>
+        <li><a href="modules.html">Modules export and import</a></li>
+        <li><a href="parameters.html">Default Parameters, Rest Parameters, Named Parameters</a></li>
+        <li><a href="spread.html">Spread Operator</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="promises.html">Promises (goodbye callback hell)</a></li>
+        <li><a href="getset.html">Getter and Setter in Classes</a></li>
+      </ul>
+
+    </div>
+  </div>
+  <div class="tm-section">
+    <div class="uk-container uk-container-center">
+      <h1>Template Literals</h1>
+      <h3>Cadenas de más de una línea</h3>
+      <br>
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <pre>
+            <code class="JavaScript">
+              
+//ES5
+console.log("línea 1 de cadena de texto\n\
+línea 2 de cadena de texto");
+// "línea 1 de cadena de texto
+// línea 2 de cadena de texto"
+
+//ES6
+console.log(`línea 1 de la cadena de texto
+línea 2 de la cadena de texto`);
+// "línea 1 de la cadena de texto
+// línea 2 de la cadena de texto"
+          </code>
+        </pre>
+        </div>
+        <h3>Interpolación de expresiones</h3>
+        <br>
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8">
+            <pre>
+            <code class="JavaScript">
+              
+//ES5
+var a = 5;
+var b = 10;
+console.log("Quince es " + (a + b) + " y\nno " + (2 * a + b) + ".");
+// "Quince es 15 y
+// no 20."
+
+//ES6
+var a = 5;
+var b = 10;
+console.log(`Quince es ${a + b} y\nno ${2 * a + b}.`);
+// "Quince es 15 y
+// no 20."
+          </code>
+        </pre>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+
+
+      <h3>Descripcion</h3>
+      <p>Las plantillas de cadena de texto (template strings) son literales de texto que habilitan el uso de expresiones incrustadas. Es posible utilizar cadenas de texto de más de una línea, y funcionalidades de interpolación de cadenas de texto con ellas.</p>
+      <h3>Características</h3>
+      <ul>
+        <li>Las plantillas de cadena de texto se delimitan con el caracter de comillas o tildes invertidas (` `) (grave accent) , en lugar de las comillas simples o dobles.</li>
+        <li>Las plantillas de cadena de texto pueden contener marcadores, indentificados por el signo de pesos, y envueltos en llaves (${expresión}). Las expresiones contenidas en los marcadores, junto con el texto entre ellas, son enviados como argumentos
+          a una función. </li>
+        <li>La función por defecto simplemente concatena las partes para formar una única cadena de texto. </li>
+
+      </ul>
+
+      <br>
+      <ul class="uk-dotnav uk-dotnav  uk-flex-center">
+        <li title="Bienvenidos">
+          <a href="index.html"></a>
+        </li>
+        <li title="var vs let vs const">
+          <a href="varletconst.html"></a>
+        </li>
+        <li title="IIFEs ahora Blocks">
+          <a href="iifes.html"></a>
+        </li>
+        <li title="Strings .includes() .repeat()">
+          <a href="string.html"></a>
+        </li>
+        <li class="uk-active" title="Template literals">
+          <a href="template.html"></a>
+        </li>
+        <li title="Destructuring arrays">
+          <a href="array.html"></a>
+        </li>
+        <li title="Destructuring objects">
+          <a href="object.html"></a>
+        </li>
+        <li title="Modules export and import">
+          <a href="modules.html"></a>
+        </li>
+        <li title="Default Parameters, Rest Parameters, Named Parameters">
+          <a href="parameters.html"></a>
+        </li>
+        <li title="Spread Operator">
+          <a href="spread.html"></a>
+        </li>
+        <li title="Classes">
+          <a href="classes.html"></a>
+        </li>
+        <li title="Promises (goodbye callback hell)">
+          <a href="promises.html"></a>
+        </li>
+        <li title="Getter and Setter in Classes">
+          <a href="getset.html"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+
+</html>
