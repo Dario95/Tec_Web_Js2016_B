@@ -31,3 +31,9 @@ El sailes les pide opciones si no estan definidas, las opciones son:
 El servidor web de sails se encuentra localizado en la carpeta 
 **assets**
 
+## 
+
+Para generar un controlador se utiliza el siguiente comando:
+´´´
+>sails generate controller saludo
+´´´
