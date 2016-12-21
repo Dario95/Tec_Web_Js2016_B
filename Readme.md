@@ -37,3 +37,39 @@ Para generar un controlador se utiliza el siguiente comando:
 ´´´
 >sails generate controller saludo
 ´´´
+
+## Generar un Api
+
+´´´
+> sails generate api Nombre
+´´´
+
+Una Api es una función de un controlador y un modelo
+
+## Generar un modelo
+
+´´´
+> sails generate model Nombre
+´´´
+
+## API REST
+
+Crear 
+
+´http://localhost:1337/Usuario´
+
+Método HTTP:
+
+´POST´
+
+Datos:
+
+´´´javascript
+//jason
+{
+    nombre:'Homero',
+    apellido:'Arias',
+    correo:'homero.arias@epn.edu.ec'
+}
+´´´
+
