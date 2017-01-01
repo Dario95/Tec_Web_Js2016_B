@@ -24,7 +24,7 @@
   - <a href="#pipelines">Pipelines</a>
   - <a href="#controllers">Controllers</a>
 
-- <a href="#desarrolloDeLaPractica">Desarrollo de la práctica</a>
+- <a href="#desarrollo">Desarrollo de la práctica</a>
 - <a href="#conclusiones">Conclusiones y recomendaciones</a>
 
 <a name="tema"></a>
@@ -82,6 +82,9 @@ Los controladores están compuestos de un conjunto de métodos llamados acciones
 
 <a href="#cabecera">A la cabecera</a>
 
+<a name="desarrollo"></a>
+## Desarrollo de la práctica
+
 > npm insall -g 
 
 el -g nos deja utilizarlo globalmente
@@ -116,9 +119,9 @@ El servidor web de sails se encuentra localizado en la carpeta
 ## 
 
 Para generar un controlador se utiliza el siguiente comando:
-´´´
+```
 >sails generate controller saludo
-´´´
+```
 
 ## Generar un Api
 
@@ -154,4 +157,19 @@ Datos:
     correo:'homero.arias@epn.edu.ec'
 }
 ´´´
+
+<br>
+<a href="#cabecera">A la cabecera</a>
+
+<a name="conclusiones"></a>
+## Conclusiones y Recomendaciones
+* Entender los conceptos básicos sobre Sails.js es muy importante para un desarrollo web de calidad.
+* Se aprendió como configurar los diferentes componentes de Sails para que las páginas web sean más dinámicas.
+* La documentación original de Sails es bastante completa y se recomienda su lectura para entender de mejor manera su utilización.
+* El código debe mantenerse sencillo, esto permitirá que pueda ser entendido por otros.
+
+<br>
+<a href="#cabecera">A la cabecera</a>
+
+Autor: [Homero Arias](https://github.com/Dario95/Tec_Web_Js2016_B/)
 
