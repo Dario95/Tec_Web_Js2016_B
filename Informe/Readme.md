@@ -85,28 +85,42 @@ Los controladores están compuestos de un conjunto de métodos llamados acciones
 <a name="desarrollo"></a>
 ## Desarrollo de la práctica
 ---
-## Instalar Sails.js.
+### Instalar Sails.js.
 Para instalar Sails.js ejecutamos el siguiente comando desde consola:
-```
-> npm insall -g 
-```
+
+> npm insall -g sails
+
 el -g nos deja utilizarlo globalmente
 
-### Crear un proyecto en Sailsjs
+<p align="center">
+<img src="https://raw.githubusercontent.com/Dario95/Tec_Web_Js2016_B/10-sails-02/Informe/Graficos/npm%20sails.jpg">
+</p>
 
-´´´
+
+### Crear un proyecto en Sails.js
+Para ellos es necesario movernos al directorio donde queremos crear el proyecto Sails, y una vez allí ejecutar el siguiente comando desde consola:
+
 > sails new Mascotas
-´´´
+
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/sails%20new.jpg?raw=true">
+</p>
 
 ### Levantar el servidor
 
-´´´
+Para levantar el servidor debemos ingresar en la carpeta que se ha creado para el proyecto; para ello debemos ejecutar:
+
 >sails lift
-´´´
-´´´
-> node app.js
-´´´
-El sailes les pide opciones si no estan definidas, las opciones son:
+
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/directory%20sails.jpg?raw=true">
+</p>
+
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/sails%20lift.jpg?raw=true">
+</p>
+
+Sails pide opciones si no estan definidas, las opciones son:
 
 - 1: SAFE MODE no se va a alterar la base de datos
 
@@ -114,14 +128,72 @@ El sailes les pide opciones si no estan definidas, las opciones son:
 
 - 3: DELETE MODE borra todos los datos de la base y vuelve a crear los modelos.
 
-## Servidor Web de Sails.js
+
+En el navegador ingresamos a la URL ```http://localhost:1337/``` y observamos la siguiente página.
+
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/localhost.jpg?raw=true">
+</p>
+
+
+
+### Servidor Web de Sails.js
 
 El servidor web de sails se encuentra localizado en la carpeta 
 **assets**
+Dentro de esta carpeta crearemos la carpeta *App* y dentro de ella los archivos:
+- index.html
+- estilo.css
+- app.js
 
-## 
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/sails%20mascotas.jpg?raw=true">
+</p>
+
+El contenido de los archivos debe ser el siguiente:
+#### index.html
+
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Hola mundo</h1>
+    <script src="App.js">
+    </script>
+</body>
+</html>
+```
+
+#### estilos.css
+
+
+```javascript
+body {
+    background-color: darkblue;
+    color: white;
+}
+```
+
+#### App.js
+```javascript
+alert("No es bueno utilizar alert");
+```
+Si nos dirigimos a la dirección ```http://localhost:1337/App/index.html``` podemos observar todos los archivos enlazados.
+
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/index.jpg?raw=true">
+</p>
+
+
+### Generar un controlador
 
 Para generar un controlador se utiliza el siguiente comando:
+
 ```
 >sails generate controller saludo
 ```
