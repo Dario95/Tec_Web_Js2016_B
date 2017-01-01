@@ -84,9 +84,12 @@ Los controladores están compuestos de un conjunto de métodos llamados acciones
 
 <a name="desarrollo"></a>
 ## Desarrollo de la práctica
-
+---
+## Instalar Sails.js.
+Para instalar Sails.js ejecutamos el siguiente comando desde consola:
+```
 > npm insall -g 
-
+```
 el -g nos deja utilizarlo globalmente
 
 ### Crear un proyecto en Sailsjs
