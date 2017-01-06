@@ -195,18 +195,165 @@ Todos los archivos que guardemos dentro de la carpeta `assets` se compartirán d
 <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/imagen.jpg?raw=true">
 </p>
 
+Podemos ver las vistas de nuestro proyecto en la carpeta **views**.
+
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/views.png?raw=true">
+</p>
+
+Se utiliza las vistas 403, 404 y 500 para especificar que se va a mostrar en caso de error.
+
+Para crear nuevas vistas basta con crear más archivos en esta carpeta.
+
+Crearemos las vistas Quito, Guayaquil y Cuenca.
+
+#### Quito
+```javascript
+<h1>Quito</h1>
+```
+#### Guayaquil
+
+```javascript
+<h1>Guayaquil</h1>
+```
+
+#### Cuenca
+
+```javascript
+<h1>Cuenca</h1>
+```
+
+Para que estas vistas funcionen es necesario definir las rutas en el archivo **config/routes.js** agregando el siguiente código:
+
+```javascript
+  '/': {
+    view: 'homepage'
+  }, 
+    '/Quito':{
+        view:'quito'
+        
+    }, 
+    '/Guayaquil':{
+        view:'guayaquil'
+        
+    }, 
+    '/Cuenca':{
+        view:'cuenca'
+        
+    }
+```
+
+Ahora podemos observar las nuevas vistas en nuestra página:
+
+### Quito
+
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/quito.jpg?raw=true">
+</p>
+
+### Guayaquil
+
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/guayaquil.jpg?raw=true">
+</p>
+
+### Cuenca
+
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/cuenca.jpg?raw=true">
+</p>
+
 ### Generar un controlador
 
 Para generar un controlador se utiliza el siguiente comando:
 
 >sails generate controller saludo
 
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/controller.jpg?raw=true">
+</p>
+
+Se creará el archivo para nuestro controlador:
+
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/saludocontroller.jpg?raw=true">
+</p>
+
+Modificaremos su contenido:
+
+```javasript
+module.exports = {
+
+    hola: function (req, res) {
+
+
+        var parametros = req.allParams()
+
+        if (req.method == 'GET') {
+
+            res.json({
+                    nombre: 'hola get',
+                    para:parametros
+                });
+
+
+        } else {
+
+            if (req.method == 'POST') {
+                res.json({
+                    nombre: 'hola post'
+                });
+            } else {
+                res.json({
+                    nombre: 'hola todos'
+                });
+            }
+
+        }
+
+    },
+    adios: function (req, res) {
+        res.send('Adios');
+    },
+    hora: function (req, res) {
+        res.send('Hora');
+    }
+
+
+};
+
+```
+
+Podemos verificar con el navegador o con postman:
+
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/adios.jpg?raw=true">
+</p>
+
+### Método GET
+
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/GetHola.jpg?raw=true">
+</p>
+
+### Método POST
+
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/PostHola.jpg?raw=true">
+</p>
+
+### Método PUT
+
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/GetHola.jpg?raw=true">
+</p>
+
 ## Generar un Api
 
 > sails generate api Nombre
 
 
-Una Api es una función de un controlador y un modelo
+Una Api es una función de un controlador y un modelo.
 
 ## Generar un modelo
 
@@ -233,10 +380,7 @@ Datos:
 }
 ´´´
 
-<br>
-<a href="#cabecera">A la cabecera</a>
 
-<a name="conclusiones"></a>
 ## Conclusiones y Recomendaciones
 * Entender los conceptos básicos sobre Sails.js es muy importante para un desarrollo web de calidad.
 * Se aprendió como configurar los diferentes componentes de Sails para que las páginas web sean más dinámicas.
