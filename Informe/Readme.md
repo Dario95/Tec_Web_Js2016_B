@@ -189,28 +189,28 @@ Si nos dirigimos a la dirección ```http://localhost:1337/App/index.html``` pode
 <img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/index.jpg?raw=true">
 </p>
 
+Todos los archivos que guardemos dentro de la carpeta `assets` se compartirán de forma pública y para acceder a ellos, solo será necesario escrbir la ruta de los archivos. De esta manera podemos agregar imágenes y demás archivos.
+
+<p align="center">
+<img src="https://github.com/Dario95/Tec_Web_Js2016_B/blob/10-sails-02/Informe/Graficos/imagen.jpg?raw=true">
+</p>
 
 ### Generar un controlador
 
 Para generar un controlador se utiliza el siguiente comando:
 
-```
 >sails generate controller saludo
-```
 
 ## Generar un Api
 
-´´´
 > sails generate api Nombre
-´´´
+
 
 Una Api es una función de un controlador y un modelo
 
 ## Generar un modelo
 
-´´´
 > sails generate model Nombre
-´´´
 
 ## API REST
 
