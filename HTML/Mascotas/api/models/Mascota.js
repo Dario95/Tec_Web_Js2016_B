@@ -8,7 +8,24 @@
 module.exports = {
 
   attributes: {
-
+      nombre:{
+          type: 'string',
+          required:true
+      },
+      fechaNacimiento:{
+          type: 'date',
+      },
+      paisNacimiento:{
+          type: 'string',
+          enum:['Ecuador','Peru','Colombia'],
+      },
+      //idRaza es el nombre del ForeingKey
+      idRaza:{
+          //Model -> es el nombre de la tabla padre
+          model:'Raza',
+          //Required es OPCIONAL si no queremos registros
+          required:true
+      }
   }
 };
 
