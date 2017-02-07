@@ -20,21 +20,39 @@ module.exports = {
         if (req.method == 'POST') {
             if (parametros.nombres && parametros.apellidos) {
                 //creo el usuario
+                if(parametros.correo == ""){
+                    parametros.correo = null;
+                }
                 Usuario.create({
                     nombres: parametros.nombres,
                     apellidos: parametros.apellidos,
                     correo: parametros.correo
                 }).exec(function (error, usuarioCreado) {
-                    if (error) return res.serverError()
-                    sails.log.info(usuarioCreado);
-                    return res.ok(usuarioCreado);
+                    if (error) {
+                      return res.view('vistas/error',{error:{
+                        descripcion:"Fallo crear el usuario",
+                        rawError:"Algo paso :O",
+                        url:"/registrarUsuario"
+                        }});  
+                        
+                    }
                 });
+                
+                return res.view('vistas/Usuario/crearUsuario');
             } else {
                 // bad Request
-                return res.badRequest('No envia todos los parametros');
+                return res.view('vistas/error',{error:{
+                        descripcion:"Llena todos los parametros, apellidos y nombres",
+                        rawError:"Fallo en envio de parametros",
+                        url:"/registrarUsuario"
+                        }});
             }
         } else {
-            return res.badRequest('Metodo invalido');
+            return res.view('vistas/error',{error:{
+                        descripcion:"Error en el uso del Metodo HTTP",
+                        rawError:"HTTP invalido",
+                        url:"/registrarUsuario"
+                        }});
         }
 
     },
