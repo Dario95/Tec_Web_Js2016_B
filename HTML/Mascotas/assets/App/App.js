@@ -1,1 +1,0 @@
-alert("No es bueno utilizar alert");
