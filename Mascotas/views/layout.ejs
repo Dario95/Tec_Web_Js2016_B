@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%=typeof title == 'undefined' ? 'New Sails App' : title%></title>
+
+<head>
+    <title>
+        <%=typeof title == 'undefined' ? 'New Sails App' : title%>
+    </title>
 
     <!-- Viewport mobile tag for sensible mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <script src="/jquery/jquery-3.1.1.js"></script>        
-    <link rel="stylesheet" href="/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <script src="/bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-     </head>
+    <link rel="stylesheet" href="/Bootstrap/bootstrap/css/bootstrap.min.css">
 
-  <body>
-   <nav class="navbar navbar-default">
+    <script src="/Jquery/jquery-3.1.1.min.js"></script>
+
+    <script src="/Bootstrap/bootstrap/js/bootstrap.min.js"></script>
+
+
+    <!--
+        Stylesheets and Preprocessors
+        ==============================
+
+        You can always bring in CSS files manually with `<link>` tags, or asynchronously
+        using a solution like AMD (RequireJS).  Or, if you like, you can take advantage
+        of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+        By default, stylesheets from your `assets/styles` folder are included
+        here automatically (between STYLES and STYLES END). Both CSS (.css) and LESS (.less)
+        are supported. In production, your styles will be minified and concatenated into
+        a single file.
+
+        To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+
+            + Change the order of your CSS files
+            + Import stylesheets from other directories
+            + Use a different or additional preprocessor, like SASS, SCSS or Stylus
+    -->
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/estilosListarUsuarios.css">
+    <link rel="stylesheet" href="/styles/importer.css">
+    <!--STYLES END-->
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -26,17 +60,25 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="/Inicio">Inicio</a></li>
+                    <li><a href="/ListarUsuarios">Listar Usuarios</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
+
+    <!--      .container   EMMET -->
     <div class="container">
-    <%- body %>
+        <%- body %>
     </div>
 
-    
+    <div class="navbar navbar-fixed-bottom">
+        Desarrolado por Escuela Politecnica Nacional
+    </div>
+
+
+
     <!--
         Client-side Templates
         ========================
@@ -89,5 +131,6 @@
     <!--SCRIPTS-->
     <script src="/js/dependencies/sails.io.js"></script>
     <!--SCRIPTS END-->
-  </body>
+</body>
+
 </html>
