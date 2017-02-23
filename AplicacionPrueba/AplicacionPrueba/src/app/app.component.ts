@@ -27,5 +27,12 @@ export class AppComponent {
   hizoClic(){
    console.log("Hizo Clic");
   }
+  mouseEntro(){
+    console.log("Hizo Focus");
+  }
+  crearTienda(formulario){
+    console.log(formulario);
+  }
+  nuevaTienda:any={};
   title="Aplicaición";
 }
