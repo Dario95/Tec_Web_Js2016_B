@@ -1,0 +1,10 @@
+<h1>
+  {{title}}
+</h1>
+<h2>
+  {{nombre}}-{{apellido}}
+</h2>
+<h3 [innerHTML]="nombtrCompleto()" (click)="hizoClic()" >
+  {{apellido}}-{{apellido}}
+</h3>
+<input type="text" [placeholder]="nombtrCompleto()">
