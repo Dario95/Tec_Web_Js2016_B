@@ -1,38 +1,19 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from "@angular/core";
+import {Response, Http} from "@angular/http";
+import {MasterURlService} from "./services/master-url.service";
+import {Form, NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+// CTRL A +  -  CTRL + ALT + L
+export class AppComponent implements OnInit {
 
-  nombre:string="";
-  apellido:string="";
-  constructor(){
-  console.log("Inicio del constructor");
-  this.nombre="Homero";
-  this.apellido="Arias";
+  constructor() {
   }
 
-  ngOnInit(){
-    console.log("On Init");
-    this.nombre="Dario";
-    this.apellido="Puente";
+  ngOnInit() {
   }
-  nombtrCompleto():string{
-    return `${(this.nombre)} ${(this.apellido)}`
-  }
-
-  hizoClic(){
-   console.log("Hizo Clic");
-  }
-  mouseEntro(){
-    console.log("Hizo Focus");
-  }
-  crearTienda(formulario){
-    console.log(formulario);
-  }
-  nuevaTienda:any={};
-  title="Aplicaición";
 }
