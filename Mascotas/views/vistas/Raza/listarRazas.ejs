@@ -1,0 +1,14 @@
+<div class="row" >
+
+  <% for(var i=0; i<razas.length; i++){ %>
+  <div class="col-sm-3" style="background-color: rgba(54, 25, 25, .5);color: white;border-radius: 5px;">
+    <h3 class="text-center"> ID: <%=razas[i].id%> -  <%=razas[i].nombre%></h3>
+    <a style="color:white" href="/Raza/destroy/<%=razas[i].id%>">
+      <button class="btn btn-block btn-danger"> Borrar</button>
+    </a>
+    <br>
+  </div>
+  <div class="col-sm-1"></div>
+  <%  } %>
+
+</div>

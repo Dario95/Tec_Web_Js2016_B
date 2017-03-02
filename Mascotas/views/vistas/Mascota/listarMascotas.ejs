@@ -1,0 +1,27 @@
+
+
+  <% for(var i=0; i<mascotas.length; i++){ %>
+  <div class="row"  style="background-color: rgba(54, 25, 25, .5);color: white;border-radius: 5px;">
+  <% mascotas[i].fechaNacimiento.setUTCDate(15) %>
+  <div class="col-sm-8">
+    <h3 class="text-center"> <%=mascotas[i].nombre%></h3>
+    <h4 class="text-center"> Fecha de nacimiento: <%= mascotas[i].fechaNacimiento.toDateString() %></h4>
+    <p class="text-center">
+      <%= mascotas[i].paisNacimiento %>
+    </p>
+  </div>
+    <div class="col-sm-4">
+      <br>
+    <a style="color:white" href="/Mascota/destroy/<%=mascotas[i].id%>">
+      <button class="btn btn-block btn-danger"> Borrar</button>
+    </a>
+    <br>
+    <a style="color:white" href="/EditarMascota?id=<%=mascotas[i].id%>">
+      <button class="btn btn-block btn-success"> Editar</button>
+    </a>
+  </div>
+  </div>
+  <br>
+  <%  } %>
+
+

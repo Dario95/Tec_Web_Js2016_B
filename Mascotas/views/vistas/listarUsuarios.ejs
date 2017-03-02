@@ -1,0 +1,27 @@
+
+
+  <% for(var i=0; i<usuarios.length; i++){ %>
+  <div class="row" style="background-color: rgba(54, 25, 25, .5);color: white;border-radius: 5px;">
+    <div class="col-sm-5">
+      <h3 class="text-center"><%=usuarios[i].apellidos%></h3>
+      <h4 class="text-center"> <%=usuarios[i].nombres%></h4>
+      <p class="text-center">
+        <%= usuarios[i].correo == '' ? 'Sin correo' : usuarios[i].correo%>
+      </p>
+    </div>
+  <div class="col-sm-3">
+    <br>
+      <a style="color:white" href="/Usuario/destroy/<%=usuarios[i].id%>">
+        <button class="btn btn-block btn-danger"> Borrar</button>
+      </a>
+
+      <a style="color:white" href="/EditarUsuario?id=<%=usuarios[i].id%>">
+        <button class="btn btn-block btn-success"> Editar</button>
+      </a>
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
+  <br>
+    <%  } %>
+
+
