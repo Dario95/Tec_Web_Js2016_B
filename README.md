@@ -1,214 +1,103 @@
-## Comandos Importantes
+# Repositorio de Tecnologías Web con Js
+Este repostorio forma parte del [curso de tecnologías web](https://github.com/adrianeguez/Tec_Web_Js_2016_B)
 
-### Instalar sailsjs
+## Enfasis de Texto
 
-Sailsjs es un servidor web que se conecta a bases de datos y puede funcionar con aplicaciones en tiempo real, ayudandonos a crear REST APIs.
+* Para nosotros utilizar un texto en **negrita** se utilizan dos "**".
 
-´´´
-> npm install -g sails
-´´´
+* Para nosotros utilizar un texto en *cursiva* se utilizan un "*".
 
-El -g nos deja utilizarlo globalmente.
+* Para nosotros ~~tachar~~ un texto se utilizan dos "~~".
 
-### Crear un proyecto en Sailsjs
+##Listas Ordenadas
 
-´´´
-> sails new NombreProyecto
-´´´
+1. El número
+    * lista no ordenada 1 (dos espacios " " antes del astertisco)
+    * lista no ordenada 2 (dos espacios " " antes del astertisco)
+2. De las listas
+1. Ordenadas 
+    1. Esta si es una lista ordenada (con dos espacios " " antes de los números)
+    2. Esta es la segunda lista ordenada (con dos espacios " " antes de los números)
+4. no importa
 
-### Levantar el servidor
+## Links
 
-´´´
-> sails lift
-´´´
+Para utilizar un [Link](https://github.com/Dario95/Tec_Web_Js2016_B/blob/master/Readme.md) debemos encerrar el texto en brackets [] y seguido del URL en paréntesis () 
 
+##Imágenes 
 
-´´´
-> node app.js
-´´´
+Para nosotros utilizar imágenes debemos colocar un texto alternativo en bracjets [] después del caracter de exclamación ! y el link de la imagen entre paréntesis()
 
-El sails les pide opciones si no estan definidas, las opciones son:
+![Imagen de Js en color amarillo](https://lh3.googleusercontent.com/-CLNtMHm_YB8/AAAAAAAAAAI/AAAAAAAAAB8/toUGK2dqElY/w360-h203-p-rw/photo.jpg "Javascript")
 
-- 1: SAFE MODE no se va a alterar la base de datos
-- 2: ALTER MODE se va a alterar la base de datos si nosotros hicimos cambios en los modelos por ejemplo
-- 3: DELETE MODE borra todos los datos de la base y vuelve a crear los modelos
+## Formateo de código
 
-## Servidor Web de Sailsjs
+Para nosotros utilizar el formateo de codigo dentro de texto plano debemos de utilizar el caracter `Tilde invertida`
 
-El servidor web de sails se encuentra localizado en la carpeta **assets**
+Para utilizar el formateo de codigo en un bloque de codigo necesitamos utilizar 3 `Tildes invertidas` donde se puede especificar el lenguaje de programacion a usarse para el formateo del codigo, justo despues de las 3 `Tildes invertidas`
 
+* Bloque de código con `javascript`
 
-## Generar Controladores Sailsjs
+```javascript
+var mensaje="Hola mundo";
+```
 
-´´´
-> sails generate controller NombreControlador
-´´´
+* Bloque de código de una `consola`
 
-## Generar Modelos en Sailsjs
+```
+> apt-get install
+```
 
-´´´
-> sails generate model NombreModelo
-´´´
 
-## Generar APIs en Sailsjs
+* Bloque de HTML
 
-´´´
-> sails generate api NombreAPI
-´´´
+```
+<html>
+</html>
+```
+## Tablas
 
-Un Api es la fusión de un **Controlador** y de un **Modelo**.
+Para usar tablas necesitamos definir las filas con | 
 
-# API REST
+|Columna 1 | Columna 2|Columna 3| Columna 4|
+|---|---|---|---|
+|Valor 1 C1|Valor 1 C2 |Valor 1 C3|Valor 1 C4|
+|Valor 2 C1|Valor 2 C2 |Valor 2 C3|Valor 2 C4|
+|Valor 3 C1|Valor 3 C2 |Valor 3 C3|Valor 3 C4|
+|Valor 4 C1|Valor 4 C2 |Valor 4 C3|Valor 4 C4|
 
-## Modelo Usuario
 
-### Crear Usuarios
+## Citas (no de humanos sino de texto)
 
-URL:
+Para escribir varias líneas de citas solamnete las concatenamos en la siuiente línea utilizando `>`:
 
-´http://localhost:1337/Usuario´
+> Yo solo se, que nada se.
 
-Metodo HTTP:
+> Un filósofo random
 
-´POST´
+Sino utilizamos una cita en una línea con mayor que `>`
 
-Datos:
+> Y si me matas, ¿Me muero?.
 
+## Saltos de línea
 
-´´´javascript
-{
-    nombre:'Adrian',
-    apellido:'Eguez',
-    correo:'adrian.eguez@epn.edu.ec'
-}
-´´´
+## Saltos de linea
 
+Para utilizar un salto de linea debemos de utilizar mas de 3 veces el caracter `-`
+---
 
-### Buscar Usuarios
+O el caracter `*`
 
-URL:
+***
 
-´http://localhost:1337/Usuario´
+O el caracter `__`
 
-Metodo HTTP:
+___
 
-´GET´
+> Otro quote :) 
 
-Datos:
+## Videos de Youtube
 
-
-´´´javascript
-[
-  {
-    "nombres": "Adrian",
-    "apellidos": "Eguez",
-    "correo": "adrian.eguez@epn.edu.ec",
-    "createdAt": "2016-12-21T18:57:16.362Z",
-    "updatedAt": "2016-12-21T18:57:16.362Z",
-    "id": 1
-  },
-  {
-    "nombress": "Vicente",
-    "apellidoss": "Sarzosa",
-    "correos": "vicente.sarzosa@epn.edu.ec",
-    "correo": "correo@invalido.com",
-    "createdAt": "2016-12-21T18:58:00.888Z",
-    "updatedAt": "2016-12-21T19:06:31.603Z",
-    "id": 2,
-    "nombre": "Carlos",
-    "casa": "Azul",
-    "mouse": "negro"
-  }
-]
-´´´
-
-### Buscar Usuario por ID
-
-URL:
-
-´http://localhost:1337/Usuario/1´
-
-Metodo HTTP:
-
-´GET´
-
-Datos:
-
-
-´´´javascript
-  {
-    "nombres": "Adrian",
-    "apellidos": "Eguez",
-    "correo": "adrian.eguez@epn.edu.ec",
-    "createdAt": "2016-12-21T18:57:16.362Z",
-    "updatedAt": "2016-12-21T18:57:16.362Z",
-    "id": 1
-  }
-´´´
-
-### Borrar Usuarios
-
-URL:
-
-´http://localhost:1337/Usuario/1´
-
-Metodo HTTP:
-
-´DELETE´
-
-Datos:
-
-
-´´´javascript
-  {
-    "nombres": "Adrian",
-    "apellidos": "Eguez",
-    "correo": "adrian.eguez@epn.edu.ec",
-    "createdAt": "2016-12-21T18:57:16.362Z",
-    "updatedAt": "2016-12-21T18:57:16.362Z",
-    "id": 1
-  }
-´´´
-
-### Actualizar Usuarios
-
-URL:
-
-´http://localhost:1337/Usuario/1´
-
-Metodo HTTP:
-
-´PUT´
-
-Datos:
-
-
-´´´javascript
-  {
-    "nombres": "Adrian",
-    "apellidos": "Eguez",
-    "correo": "adrian.eguez@epn.edu.ec",
-    "createdAt": "2016-12-21T18:57:16.362Z",
-    "updatedAt": "2016-12-21T18:57:16.362Z",
-    "id": 1
-  }
-´´´
-
-
-## Blueprint API
-
-### Shortcuts
-
-Con los shortcuts tenemos la posibilidad de crear borrar y actualizar mediante solamente un URL en sails
-
-
-´´´
-http://localhost:1337/Usuario/create?nombres=Adrian&apellidos=Lucho
-    
-http://localhost:1337/Usuario/destroy/1
-    
-http://localhost:1337/Usuario/update/1?nombres=Fernando
-
-´´´
-
-
+Es uso puro de HTML dentro de markdown
+<a href="https://www.youtube.com/watch?v=650s9uWWr1o" target="_blank"><img src="http://nodeframework.com/assets/img/js.png" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
