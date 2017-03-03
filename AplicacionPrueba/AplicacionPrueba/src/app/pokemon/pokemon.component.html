@@ -1,0 +1,21 @@
+<h1>Pokemons</h1>
+
+<div class="container">
+  <div class="form-group">
+    <label>Nombre de Pokemon</label>
+    <input type="text"
+           class="form-control"
+           name="nombre"
+           [(ngModel)]="nuevoPokemon.nombre"
+           >
+  </div>
+  <button class="btn btn-block btn-success" (click)="crearPokemon(nuevoPokemon.nombre)">Crear Pokemon</button>
+
+  <div class="row">
+    <div class="col-sm-12" *ngFor="let pokemon of pokemons">
+      <h1>{{pokemon.nombre}}</h1>
+      <p>ID:{{pokemon.id}}</p>
+    </div>
+  </div>
+</div>
+

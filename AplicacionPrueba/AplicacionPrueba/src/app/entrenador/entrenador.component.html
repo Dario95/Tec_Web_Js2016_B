@@ -1,0 +1,61 @@
+<h1>{{title}}</h1>
+<h2>{{error}}</h2>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4 opaque1">
+        <h2>Crea un entrenador</h2>
+        <form class="animated bounceIn" (ngSubmit)="crearEntrenador(NuevaEntrenadorForm)" #NuevaEntrenadorForm="ngForm">
+
+          <div class="form-group">
+            <label>Nombres</label>
+            <input type="text" class="form-control" placeholder="Ingrese su nombre" [(ngModel)]="nuevaEntrenador.nombre" name="nombre">
+          </div>
+
+          <div class="form-group">
+            <label>Fecha inicio</label>
+            <input type="date" class="form-control" id="datePicker" [(ngModel)]="nuevaEntrenador.fechaInicio" name="fechaInicio">
+          </div>
+          <div class="form-group">
+            <label>Region</label>
+            <select class="form-control" id="exampleSelect1" [(ngModel)]="nuevaEntrenador.region" name="region">
+              <option>Alola</option>
+              <option>Johto</option>
+              <option>Kanto</option>
+              <option>Hoenn</option>
+              <option>Teselia</option>
+              <option>Sinnoh</option>
+              <option>Kalos</option>
+              <option>Islas</option>
+              <option>Sete</option>
+            </select>
+          </div>
+          <!--
+
+              <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" class="form-control" placeholder="Ingrese su password"  name="password">
+              </div>
+          -->
+
+          <button [disabled]="disabledButtons.NuevaEntrenadorFormSubmitButton||!NuevaEntrenadorForm.valid" type="submit"
+                  class="btn btn-block btn-success">Crear
+          </button>
+
+        </form>
+        <br>
+        <script src="/bootstrap/js/codigo.js"></script>
+      </div>
+      <div class="col-sm-4">
+        <h1>{{nuevaEntrenador.nombre}}</h1>
+        <h1>{{nuevaEntrenador.fechaInicio}}</h1>
+        <h1>{{nuevaEntrenador.region}}</h1>
+      </div>
+    </div>
+    <!--{{Entrenadors | json}}-->
+    <!--</pre>-->
+    <!--</div>-->
+
+
+
+</div>
